@@ -1,4 +1,4 @@
-# 1. Overview
+﻿# 1. Overview
 
 PDFSolid Conversion SDK is a high-performance library designed for extracting and transforming the data within your PDF files, such as text, images, tables, links, and annotations, into various file formats. The Conversion SDK retains the original document layout and the properties of the file data, helping you build a reliable document conversion workflow in C applications.
 
@@ -47,9 +47,9 @@ The PDFSolid Conversion SDK is designed to convert PDF files into many other for
 
 ## 1.3 License & Trial
 
-The PDFSolid Conversion SDK is a commercial SDK that requires a license to grant developers the right to develop and distribute their applications. In development mode, each license is only valid for one device ID. PDFSolid provides flexible licensing models. Please contact [our marketing team](mailto:support@pdfsolid.com) for more information. Even if you have a license, it is prohibited to distribute any documents, sample code, or source code of the PDFSolid Conversion SDK to any third parties.
+The PDFSolid Conversion SDK is a commercial SDK that requires a license to grant developers the right to develop and distribute their applications. In development mode, each license is only valid for one device ID. PDFSolid provides flexible licensing models. Please contact [our marketing team](mailto:sales@pdfsolid.com) for more information. Even if you have a license, it is prohibited to distribute any documents, sample code, or source code of the PDFSolid Conversion SDK to any third parties.
 
-If you do not have a license, please contact the PDFSolid Team at support@pdfsolid.com to obtain a trial license for PDFSolid Conversion SDK.
+If you do not have a license, please contact the PDFSolid Team at sales@pdfsolid.com to obtain a trial license for PDFSolid Conversion SDK.
 
 # 2. Get Started
 
@@ -63,19 +63,19 @@ PDFSolid provides two types of license key: 30-day free trial license and commer
 
 #### How to Get Free Trial License
 
-Contact our sales team at support@pdfsolid.com and we will send you a 30-day free trial license for PDFSolid Conversion SDK.
+Contact our sales team at sales@pdfsolid.com and we will send you a 30-day free trial license for PDFSolid Conversion SDK.
 
 #### How to Get Commercial License
 
 PDFSolid Conversion SDK is a commercial SDK that requires a license for application release. Any documents, sample code, or source code distribution from the released package of PDFSolid to any third party is prohibited.
 
-To get a commercial license for PDFSolid Conversion SDK, feel free to contact our sales team at support@pdfsolid.com.
+To get a commercial license for PDFSolid Conversion SDK, feel free to Contact our sales team at sales@pdfsolid.com.
 
 For the C Conversion SDK, the commercial license must be bound to your developer device ID (How to find the developer device ID), and each license is only valid for one device ID in development mode.
 
 ### 2.1.2 Download Conversion SDK
 
-Contact us at support@pdfsolid.com to obtain the PDFSolid C Conversion SDK.
+Contact us at sales@pdfsolid.com to obtain the PDFSolid C Conversion SDK.
 
 ### 2.1.3 System Requirements
 
@@ -87,7 +87,7 @@ Contact us at support@pdfsolid.com to obtain the PDFSolid C Conversion SDK.
 
 ## 2.2 SDK Package Structure
 
-You can contact us at support@pdfsolid.com to get the PDF format conversion SDK package. The PDFSolid Conversion C SDK contains the following files:
+You can contact us at sales@pdfsolid.com to get the PDF format conversion SDK package. The PDFSolid Conversion C SDK contains the following files:
 
 - ***"doc"*** - API reference and developer guide.
 - ***"include"*** - Header files for PDFSolid Conversion SDK C API.
@@ -193,121 +193,11 @@ PDFSolid Conversion SDK provides demos in the ***"samples"*** folder. Before run
 
 Output files such as Word, Excel, and PowerPoint files will be generated in the ***"samples/output_files"*** folder.
 
-# 3. C API Basics
-
-## 3.1 Header Files
-
-The C SDK exposes the following main headers:
-
-| Header | Description |
-| ------ | ----------- |
-| `pdfsolid_common_c.h` | License, initialization, resource release, page count, version, and DocumentAI model configuration. |
-| `pdfsolid_conversion_c.h` | PDF conversion APIs. |
-| `pdfsolid_basictypes_c.h` | Error codes, conversion options, image types, OCR languages, and other public C types. |
-
-Most conversion code needs at least:
-
-```c
-#include <stdbool.h>
-#include <string.h>
-
-#include "pdfsolid_common_c.h"
-#include "pdfsolid_conversion_c.h"
-```
-
-## 3.2 Platform String Type
-
-Most file path parameters use `PDFSOLID_STRING`:
-
-```c
-#if defined(_WIN32)
-#define PDFSOLID_STRING const wchar_t*
-#else
-#define PDFSOLID_STRING const char*
-#endif
-```
-
-On Windows, pass wide-character strings such as `L"input.pdf"`. On Linux and macOS, pass UTF-8 `const char*` strings. For portable string literals in sample code, this guide uses the following helper macro:
-
-```c
-#if defined(_WIN32)
-#define CPDF_TEXT(text) L##text
-#else
-#define CPDF_TEXT(text) text
-#endif
-```
-
-`CPDF_LicenseVerify` is an exception: its `license`, `device_id`, and `app_id` parameters are always `const char*`.
-
-## 3.3 Conversion Option Initialization
-
-`CConvertOption` is a plain C structure. It does not have a constructor, so initialize it before use. The following helper mirrors the current default values used by the C++ SDK:
-
-```c
-#include <string.h>
-
-static CConvertOption CPDF_DefaultConvertOption(void)
-{
-    CConvertOption option;
-    memset(&option, 0, sizeof(option));
-
-    option.enable_ai_layout = true;
-    option.enable_ai_table_recognition = true;
-    option.contain_image = true;
-    option.contain_page_background_image = true;
-    option.json_contain_table = true;
-    option.contain_annotation = true;
-    option.transparent_text = true;
-    option.txt_table_format = true;
-    option.formula_to_image = true;
-    option.auto_create_folder = true;
-    option.image_scaling = 4.0f;
-    option.page_layout_mode = e_PageLayoutModeFlow;
-    option.excel_worksheet_option = e_CForTable;
-    option.html_option = e_CSinglePage;
-    option.ocr_option = e_CAll;
-    option.image_color_mode = e_CColor;
-    option.image_type = e_CJPG;
-
-    return option;
-}
-```
-
-You can also zero-initialize the structure and explicitly set every option you rely on:
-
-```c
-CConvertOption option = {0};
-option.contain_image = true;
-option.page_layout_mode = e_PageLayoutModeFlow;
-```
-
-For string fields such as `page_ranges` and `font_name`, use bounded copy functions in production code. The sample snippets use `strcpy` only for clarity.
-
-## 3.4 Error Codes
-
-Most C APIs return `CSDKErrorCode`. `e_CErrSuccess` indicates success. Other common error codes include:
-
-| Error Code | Meaning |
-| ---------- | ------- |
-| `e_CErrFile` | File cannot be found or opened. |
-| `e_CErrPDFPassword` | The PDF password is invalid. |
-| `e_CErrPDFFormat` | The PDF format is invalid or the file is corrupted. |
-| `e_CErrOutOfMemory` | Memory allocation failed. |
-| `e_CErrLicenseInvalid` | The license is invalid. |
-| `e_CErrLicenseExpire` | The license has expired. |
-| `e_CErrLicenseConcurrencyExceeded` | Current conversion concurrency exceeds the license limit. |
-| `e_CErrLicensePageLimitExceeded` | Current conversion pages exceed the license limit. |
-| `e_CErrOCRFailure` | OCR recognition failed. |
-| `e_CErrConverting` | A conversion task is already running. |
-| `e_CErrUnknown` | Unknown error. |
-
-Always check the returned error code after calling a conversion API.
-
-# 4. Conversion Guides
+# 3. Conversion Guides
 
 PDFSolid Conversion SDK allows developers to use simple C APIs to convert PDFs to common formats such as Word, Excel, PowerPoint, HTML, CSV, PNG, JPEG, RTF, TXT, Searchable PDF, OFD, JSON, and Markdown. It also provides conversion options, such as whether to include images or annotations, whether to enable OCR, and whether to enable layout analysis.
 
-## 4.1 Initialize Library Resources
+## 3.1 Initialize Library Resources
 
 ### Overview
 
@@ -324,7 +214,7 @@ Initialize the necessary file and memory resources required by the PDFSolid Conv
 CPDF_Initialize(CPDF_TEXT("PDFSolid_Conversion_SDK/resource"));
 ```
 
-## 4.2 Set DocumentAI Model
+## 3.2 Set DocumentAI Model
 
 ### Overview
 
@@ -351,11 +241,11 @@ CPDF_SetDocumentAIModelCount(1, 1);
 
 The first parameter indicates the number of Layout Analysis model instances, and the second parameter indicates the number of Table Recognition model instances.
 
-### Use Your Own AI Engine (SDK v4.1.0+)
+### Use Your Own AI Engine (SDK v1.1.0+)
 
-This option is available only in SDK v4.1.0 or later. If you prefer to run OCR, Layout Analysis, or Table Recognition with your own model or a third-party service instead of the bundled DocumentAI model, the SDK exposes callback hooks on `CConvertCallback` that let you supply the results as JSON. See [4.11 Use Custom AI Models via Callbacks](#411-use-custom-ai-models-via-callbacks) for details. When all capabilities you need are covered by your own callbacks, `CPDF_SetDocumentAIModel` does not have to be called.
+This option is available only in SDK v1.1.0 or later. If you prefer to run OCR, Layout Analysis, or Table Recognition with your own model or a third-party service instead of the bundled DocumentAI model, the SDK exposes callback hooks on `CConvertCallback` that let you supply the results as JSON. See [3.11 Use Custom AI Models via Callbacks](#311-use-custom-ai-models-via-callbacks) for details. When all capabilities you need are covered by your own callbacks, `CPDF_SetDocumentAIModel` does not have to be called.
 
-## 4.3 Get Conversion Progress
+## 3.3 Get Conversion Progress
 
 PDFSolid Conversion SDK obtains conversion progress through the `progress` callback in `CConvertCallback`. The following example demonstrates how to get conversion progress while performing a PDF to Word task:
 
@@ -382,7 +272,7 @@ CSDKErrorCode code = CPDF_StartPDFToWord(
 
 The `handle` field is maintained internally by the SDK during conversion, so it should be initialized to `NULL` when passed in.
 
-## 4.4 Cancel Conversion Task
+## 3.4 Cancel Conversion Task
 
 PDFSolid Conversion SDK supports interrupting an ongoing conversion task through the `cancel` callback in `CConvertCallback`. When the `cancel` callback returns `true`, the current conversion task stops as soon as possible.
 
@@ -407,7 +297,7 @@ CSDKErrorCode code = CPDF_StartPDFToWord(
 
 If you need to cancel the conversion at a specific time, return `true` from `Cancel` based on external state.
 
-## 4.5 Select Page Range for Conversion
+## 3.5 Select Page Range for Conversion
 
 PDFSolid Conversion SDK supports converting a specified page range. When an empty string is passed, all pages will be converted. If the page range exceeds one page, you can enable `output_document_per_page` to output each PDF page as a separate file.
 
@@ -417,7 +307,7 @@ option.output_document_per_page = true;
 strcpy(option.page_ranges, "1-3,5,7-9");
 ```
 
-## 4.6 Contain Image and Annotation Options
+## 3.6 Contain Image and Annotation Options
 
 ### Overview
 
@@ -451,7 +341,7 @@ CSDKErrorCode code = CPDF_StartPDFToWord(
     NULL);
 ```
 
-## 4.7 Page Layout Mode
+## 3.7 Page Layout Mode
 
 In certain formats, the page layout mode plays a key role in the quality of the converted document. PDFSolid Conversion SDK supports two layout modes: Flow Layout and Box Layout.
 
@@ -475,7 +365,7 @@ option.page_layout_mode = e_PageLayoutModeBox;
 CPDF_StartPDFToWord(CPDF_TEXT("input.pdf"), CPDF_TEXT("password"), CPDF_TEXT("path/box.docx"), option, NULL);
 ```
 
-## 4.8 OCR
+## 3.8 OCR
 
 ### Overview
 
@@ -574,7 +464,7 @@ option.language_count = 1;
 CPDF_StartPDFToWord(CPDF_TEXT("input.png"), CPDF_TEXT(""), CPDF_TEXT("path/output.docx"), option, NULL);
 ```
 
-## 4.9 Layout Analysis
+## 3.9 Layout Analysis
 
 ### Overview
 
@@ -594,7 +484,7 @@ Features that support Layout Analysis:
 
 ### Notice
 
-- You need to load the DocumentAI model before using layout analysis, or plug in your own AI engine via callbacks described in [4.11 Use Custom AI Models via Callbacks](#411-use-custom-ai-models-via-callbacks).
+- You need to load the DocumentAI model before using layout analysis, or plug in your own AI engine via callbacks described in [3.11 Use Custom AI Models via Callbacks](#311-use-custom-ai-models-via-callbacks).
 - When OCR is enabled, layout analysis is automatically enabled.
 - AI table recognition is a separate stage controlled by `enable_ai_table_recognition`.
 
@@ -609,7 +499,7 @@ option.enable_ai_layout = true;
 CPDF_StartPDFToWord(CPDF_TEXT("word.pdf"), CPDF_TEXT("password"), CPDF_TEXT("path/output.docx"), option, NULL);
 ```
 
-## 4.10 Table Recognition
+## 3.10 Table Recognition
 
 ### Overview
 
@@ -626,7 +516,7 @@ Typical scenarios that benefit from Table Recognition:
 ### Notice
 
 - Table Recognition runs only when layout analysis is active, either through `enable_ai_layout = true` or implicitly through `enable_ocr = true`.
-- You need to load the DocumentAI model before using Table Recognition, or plug in your own table model via callbacks described in [4.11 Use Custom AI Models via Callbacks](#411-use-custom-ai-models-via-callbacks).
+- You need to load the DocumentAI model before using Table Recognition, or plug in your own table model via callbacks described in [3.11 Use Custom AI Models via Callbacks](#311-use-custom-ai-models-via-callbacks).
 - Set `enable_ai_table_recognition = false` to disable the table model.
 - The number of Table Recognition model instances can be tuned through the second parameter of `CPDF_SetDocumentAIModelCount`.
 
@@ -642,11 +532,11 @@ option.enable_ai_table_recognition = true;
 CPDF_StartPDFToWord(CPDF_TEXT("word.pdf"), CPDF_TEXT("password"), CPDF_TEXT("path/output.docx"), option, NULL);
 ```
 
-## 4.11 Use Custom AI Models via Callbacks
+## 3.11 Use Custom AI Models via Callbacks
 
 ### Overview
 
-Starting with SDK v4.1.0, PDFSolid Conversion SDK exposes a callback-based extension point that lets you plug in your own AI inference engine for OCR, Layout Analysis, and Table Recognition. Instead of relying on the built-in DocumentAI model loaded by `CPDF_SetDocumentAIModel`, you can run inference with any model or service and return the result to the SDK as a JSON string.
+Starting with SDK v1.1.0, PDFSolid Conversion SDK exposes a callback-based extension point that lets you plug in your own AI inference engine for OCR, Layout Analysis, and Table Recognition. Instead of relying on the built-in DocumentAI model loaded by `CPDF_SetDocumentAIModel`, you can run inference with any model or service and return the result to the SDK as a JSON string.
 
 When the relevant callback pair is registered on `CConvertCallback`, the SDK skips its built-in model invocation for that capability and consumes your JSON output instead. If a pair is left as `NULL`, the SDK falls back to the built-in DocumentAI model when available.
 
@@ -867,7 +757,7 @@ Returned by `get_table_result` once per detected table region. Polygons use eigh
 
 If you need a reference output to compare against, run a conversion once with the built-in DocumentAI model. The SDK uses the same JSON shape internally, so your custom output should follow the same structure.
 
-## 4.12 Output Font Option
+## 3.12 Output Font Option
 
 ### Overview
 
@@ -894,7 +784,7 @@ strcpy(option.font_name, "Arial");
 CPDF_StartPDFToWord(CPDF_TEXT("word.pdf"), CPDF_TEXT("password"), CPDF_TEXT("path/output.docx"), option, NULL);
 ```
 
-## 4.13 Convert PDF to Word
+## 3.13 Convert PDF to Word
 
 ### Overview
 
@@ -923,7 +813,7 @@ option.formula_to_image = true;
 CPDF_StartPDFToWord(CPDF_TEXT("word.pdf"), CPDF_TEXT("password"), CPDF_TEXT("path/output.docx"), option, NULL);
 ```
 
-## 4.14 Convert PDF to Excel
+## 3.14 Convert PDF to Excel
 
 ### Overview
 
@@ -953,7 +843,7 @@ option.excel_worksheet_option = e_CForDocument;
 CPDF_StartPDFToExcel(CPDF_TEXT("excel.pdf"), CPDF_TEXT("password"), CPDF_TEXT("path/output_all.xlsx"), option, NULL);
 ```
 
-## 4.15 Convert PDF to PowerPoint
+## 3.15 Convert PDF to PowerPoint
 
 ### Overview
 
@@ -966,7 +856,7 @@ CConvertOption option = CPDF_DefaultConvertOption();
 CPDF_StartPDFToPpt(CPDF_TEXT("ppt.pdf"), CPDF_TEXT("password"), CPDF_TEXT("path/output.pptx"), option, NULL);
 ```
 
-## 4.16 Convert PDF to HTML
+## 3.16 Convert PDF to HTML
 
 ### Overview
 
@@ -992,7 +882,7 @@ option.html_option = e_CMultiPageWithBookmark;
 CPDF_StartPDFToHtml(CPDF_TEXT("html.pdf"), CPDF_TEXT("password"), CPDF_TEXT("path/output_multi.html"), option, NULL);
 ```
 
-## 4.17 Convert PDF to CSV
+## 3.17 Convert PDF to CSV
 
 ### Overview
 
@@ -1016,7 +906,7 @@ option.excel_worksheet_option = e_CForDocument;
 CPDF_StartPDFToExcel(CPDF_TEXT("csv.pdf"), CPDF_TEXT("password"), CPDF_TEXT("path/output_merged.csv"), option, NULL);
 ```
 
-## 4.18 Convert PDF to Image
+## 3.18 Convert PDF to Image
 
 ### Overview
 
@@ -1075,7 +965,7 @@ option.image_scaling = 2.0f;
 CPDF_StartPDFToImage(CPDF_TEXT("png.pdf"), CPDF_TEXT("password"), CPDF_TEXT("path/output"), option, NULL);
 ```
 
-## 4.19 Convert PDF to RTF
+## 3.19 Convert PDF to RTF
 
 ### Overview
 
@@ -1088,7 +978,7 @@ CConvertOption option = CPDF_DefaultConvertOption();
 CPDF_StartPDFToRtf(CPDF_TEXT("rtf.pdf"), CPDF_TEXT("password"), CPDF_TEXT("path/output.rtf"), option, NULL);
 ```
 
-## 4.20 Convert PDF to TXT
+## 3.20 Convert PDF to TXT
 
 ### Overview
 
@@ -1107,7 +997,7 @@ option.txt_table_format = true;
 CPDF_StartPDFToTxt(CPDF_TEXT("txt.pdf"), CPDF_TEXT("password"), CPDF_TEXT("path/output.txt"), option, NULL);
 ```
 
-## 4.21 Convert PDF to Searchable PDF
+## 3.21 Convert PDF to Searchable PDF
 
 ### Overview
 
@@ -1133,7 +1023,7 @@ option.transparent_text = true;
 CPDF_StartPDFToSearchablePDF(CPDF_TEXT("scan.pdf"), CPDF_TEXT("password"), CPDF_TEXT("path/output.pdf"), option, NULL);
 ```
 
-## 4.22 Convert PDF to OFD
+## 3.22 Convert PDF to OFD
 
 ### Overview
 
@@ -1161,7 +1051,7 @@ option.transparent_text = true;
 CPDF_StartPDFToOfd(CPDF_TEXT("scan.pdf"), CPDF_TEXT("password"), CPDF_TEXT("path/output.ofd"), option, NULL);
 ```
 
-## 4.23 Releasing Library Resources
+## 3.23 Releasing Library Resources
 
 ### Overview
 
@@ -1179,11 +1069,11 @@ CPDF_ReleaseDocumentAIModel();
 CPDF_Release();
 ```
 
-# 5. Data Extraction Guide
+# 4. Data Extraction Guide
 
 Unleash the power of data with PDFSolid Conversion SDK data extraction to detect, recognize, analyze, and extract PDF text, images, tables, and other content.
 
-## 5.1 Extract PDF to JSON
+## 4.1 Extract PDF to JSON
 
 ### Overview
 
@@ -1215,7 +1105,7 @@ option.json_contain_table = true;
 CPDF_StartPDFToJson(CPDF_TEXT("json.pdf"), CPDF_TEXT("password"), CPDF_TEXT("path/output.json"), option, NULL);
 ```
 
-## 5.2 Extract PDF to Markdown
+## 4.2 Extract PDF to Markdown
 
 ### Overview
 
@@ -1229,9 +1119,9 @@ CConvertOption option = CPDF_DefaultConvertOption();
 CPDF_StartPDFToMarkdown(CPDF_TEXT("markdown.pdf"), CPDF_TEXT("password"), CPDF_TEXT("path/output.md"), option, NULL);
 ```
 
-# 6. Support
+# 5. Support
 
-## 6.1 FAQ
+## 5.1 FAQ
 
 - Does OCR work on x86 architecture?
 
@@ -1245,7 +1135,7 @@ CPDF_StartPDFToMarkdown(CPDF_TEXT("markdown.pdf"), CPDF_TEXT("password"), CPDF_T
 
   `CConvertOption` is a C structure and has no constructor. Initialize it explicitly or use a helper similar to `CPDF_DefaultConvertOption` in this guide.
 
-## 6.2 Contact Us
+## 5.2 Contact Us
 
 Thanks for your interest in PDFSolid Conversion SDK, the easy-to-use and powerful development solution. If you encounter technical questions or bug issues when using PDFSolid Conversion SDK, please submit the problem report to the [PDFSolid team](mailto:support@pdfsolid.com). The following information will help us solve your problem:
 
@@ -1256,8 +1146,9 @@ Thanks for your interest in PDFSolid Conversion SDK, the easy-to-use and powerfu
 
 ### Contact Information
 
-- Home link: [https://www.pdfsolid.com](https://www.pdfsolid.com/)
-- Email: [support@pdfsolid.com](mailto:support@pdfsolid.com)
+- Website: [https://www.pdfsolid.com](https://www.pdfsolid.com/)
+- Sales: [sales@pdfsolid.com](mailto:sales@pdfsolid.com)
+- Support: [support@pdfsolid.com](mailto:support@pdfsolid.com)
 
 Thanks,
 
