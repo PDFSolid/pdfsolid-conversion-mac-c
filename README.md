@@ -1,50 +1,42 @@
-# PDFSolid Conversion SDK for C
+# PDFSolid Conversion SDK for C (macOS)
 
-A high-performance C library for extracting and transforming PDF content — text, images, tables, links, and annotations — into various file formats while preserving the original document layout.
+High-performance C SDK for converting PDF to Word, Excel, PowerPoint, HTML, Image, TXT, RTF, CSV, JSON, Markdown, Searchable PDF, and OFD with AI-powered OCR, layout analysis, and table recognition.
 
-## Supported Conversions
+## Features
 
-| Target Format | API | Extension |
-| --- | --- | --- |
-| Word | `CPDF_StartPDFToWord` | `.docx` |
-| Excel | `CPDF_StartPDFToExcel` | `.xlsx` |
-| PowerPoint | `CPDF_StartPDFToPpt` | `.pptx` |
-| HTML | `CPDF_StartPDFToHtml` | `.html` |
-| CSV | `CPDF_StartPDFToExcel` (with `excel_csv_format`) | `.csv` |
-| Image | `CPDF_StartPDFToImage` | `.png` `.jpg` `.jpeg` `.jp2` `.bmp` `.tiff` `.tga` `.gif` `.webp` |
-| RTF | `CPDF_StartPDFToRtf` | `.rtf` |
-| TXT | `CPDF_StartPDFToTxt` | `.txt` |
-| Searchable PDF | `CPDF_StartPDFToSearchablePDF` | `.pdf` |
-| OFD | `CPDF_StartPDFToOfd` | `.ofd` |
-| JSON | `CPDF_StartPDFToJson` | `.json` |
-| Markdown | `CPDF_StartPDFToMarkdown` | `.md` |
+- **PDF to Word** (.docx) — Flow and Box layout modes
+- **PDF to Excel** (.xlsx) — per-table, per-page, or per-document worksheet options
+- **PDF to PowerPoint** (.pptx)
+- **PDF to HTML** (.html) — single/multi-page with optional bookmark navigation
+- **PDF to CSV** (.csv)
+- **PDF to Image** (.png, .jpg, .jpeg, .jpeg2000, .bmp, .tiff, .tga, .gif, .webp) — color/grayscale/binary, configurable scaling
+- **PDF to Plain Text** (.txt) — optional table format preservation
+- **PDF to RTF** (.rtf)
+- **PDF to Searchable PDF** (.pdf) — OCR with transparent text layer
+- **PDF to OFD** (.ofd) — OCR, page background preservation, transparent text layer
+- **PDF to JSON** (.json) — structured data with table extraction
+- **PDF to Markdown** (.md)
 
-AI-powered capabilities: **OCR**, **Layout Analysis**, and **Table Recognition**.
+### AI-Powered Document Tools
 
-## System Requirements
+- **OCR** — Optical Character Recognition for scanned documents and images
+- **Layout Analysis** — AI-based document structure parsing
+- **Table Recognition** — AI-based table structure reconstruction
+- **Custom AI Models** — plug in your own OCR, layout, or table engine via callbacks (SDK v1.1.0+)
 
-| Platform | Requirements | Toolchain |
-| --- | --- | --- |
-| Windows | Windows 7/8/10/11 (x86, x64) | Visual Studio 2022+ |
-| Linux | Linux x64 | GCC or Clang |
+## Requirements
+
+| Platform | System Requirements | Development Environment |
+| -------- | ------------------- | ----------------------- |
 | macOS | macOS 10.14+ (Intel, Apple Silicon) | Xcode 13.0+ |
-
-## Package Structure
-
-```
-├── doc/            # API reference and developer guide
-├── include/        # C API header files
-├── lib/            # Dynamic libraries (x86/x64)
-├── resource/       # DocumentAI model resources
-├── samples/        # Demo projects and sample code
-├── legal.txt
-├── release_notes.txt
-└── README.md
-```
 
 ## Quick Start
 
-### 1. Verify License
+### 1. Get a License
+
+Contact [sales@pdfsolid.com](mailto:sales@pdfsolid.com) for a 30-day free trial or commercial license.
+
+### 2. Apply License and Initialize
 
 ```c
 #include "pdfsolid_common_c.h"
@@ -53,139 +45,97 @@ CSDKErrorCode code = CPDF_LicenseVerify("LICENSE_KEY", "device_id", "app_id");
 if (code != e_CErrSuccess) {
     return code;
 }
+
+CPDF_Initialize("PDFSolid_Conversion_SDK/resource");
 ```
 
-### 2. Initialize SDK
+### 3. Convert
 
 ```c
-#if defined(_WIN32)
-#define CPDF_TEXT(text) L##text
-#else
-#define CPDF_TEXT(text) text
-#endif
-
-CPDF_Initialize(CPDF_TEXT("PDFSolid_Conversion_SDK/resource"));
-```
-
-### 3. Convert PDF to Word
-
-```c
-#include "pdfsolid_common_c.h"
 #include "pdfsolid_conversion_c.h"
 
 CConvertOption option = CPDF_CONVERT_OPTION_DEFAULT;
-CPDF_StartPDFToWord(CPDF_TEXT("input.pdf"), CPDF_TEXT(""), CPDF_TEXT("output.docx"), option, NULL);
+CPDF_StartPDFToWord("input.pdf", "", "output.docx", option, NULL);
 ```
 
-### 4. Release Resources
+### Release Resources
 
 ```c
 CPDF_Release();
 ```
 
-## Header Files
+## Conversion Examples
 
-| Header | Description |
-| --- | --- |
-| `pdfsolid_common_c.h` | License, initialization, resource release, version, and DocumentAI configuration |
-| `pdfsolid_conversion_c.h` | PDF conversion APIs |
-| `pdfsolid_basictypes_c.h` | Error codes, conversion options, image types, OCR languages, and other public types |
-
-## Conversion Options
-
-`CConvertOption` is a plain C struct. Use the default initializer macro:
+### PDF to Excel
 
 ```c
 CConvertOption option = CPDF_CONVERT_OPTION_DEFAULT;
+option.excel_worksheet_option = e_CForTable;
+CPDF_StartPDFToExcel("input.pdf", "", "output.xlsx", option, NULL);
 ```
 
-Key options:
-
-| Option | Type | Description |
-| --- | --- | --- |
-| `enable_ai_layout` | `bool` | Enable AI layout analysis |
-| `enable_ai_table_recognition` | `bool` | Enable AI table recognition |
-| `enable_ocr` | `bool` | Enable OCR |
-| `contain_image` | `bool` | Include images in output |
-| `contain_annotation` | `bool` | Include annotations in output |
-| `page_layout_mode` | `CPageLayoutMode` | `e_PageLayoutModeFlow` or `e_PageLayoutModeBox` |
-| `image_type` | `CImageType` | Output image format (`e_CJPG`, `e_CPNG`, etc.) |
-| `image_scaling` | `float` | Image scaling factor (default `4.0f`) |
-| `page_ranges` | `char[256]` | Pages to convert, e.g. `"1-3,5,7-9"` |
-| `excel_worksheet_option` | `CExcelWorksheetOption` | `e_CForTable` / `e_CForPage` / `e_CForDocument` |
-| `html_option` | `CHtmlOption` | `e_CSinglePage` / `e_CMultiPage` / etc. |
-| `ocr_option` | `COCROption` | `e_CAll` / `e_CScanPage` / etc. |
-| `font_name` | `char[256]` | Preferred output font name |
-
-## OCR Languages
+### PDF to Image
 
 ```c
-COCRLanguage languages[] = { e_CENGLISH };
+CConvertOption option = CPDF_CONVERT_OPTION_DEFAULT;
+option.image_type = e_CPNG;
+option.image_scaling = 2.0f;
+CPDF_StartPDFToImage("input.pdf", "", "output", option, NULL);
+```
+
+### PDF to Searchable PDF (OCR)
+
+```c
+CPDF_SetDocumentAIModel("path/model");
+
+CConvertOption option = CPDF_CONVERT_OPTION_DEFAULT;
 option.enable_ocr = true;
+COCRLanguage languages[] = { e_CENGLISH };
 option.languages = languages;
 option.language_count = 1;
+option.transparent_text = true;
+CPDF_StartPDFToSearchablePDF("scan.pdf", "", "output.pdf", option, NULL);
 ```
 
-Supported: `e_CCHINESE`, `e_CCHINESE_TRA`, `e_CENGLISH`, `e_CKOREAN`, `e_CJAPANESE`, `e_CLATIN`, `e_CDEVANAGARI`, `e_CCYRILLIC`, `e_CARABIC`, `e_CTAMIL`, `e_CTELUGU`, `e_CKANNADA`, `e_CTHAI`, `e_CGREEK`, `e_CEslav`, `e_CAUTO`.
-
-## Progress and Cancellation
+### PDF to JSON with Table Extraction
 
 ```c
-static void progress_callback(int current, int total) {
-    printf("progress: %d / %d\n", current, total);
-}
+CConvertOption option = CPDF_CONVERT_OPTION_DEFAULT;
+option.json_contain_table = true;
+CPDF_StartPDFToJson("input.pdf", "", "output.json", option, NULL);
+```
 
-static bool cancel_callback(void) {
-    return false;
-}
+### Custom AI Engine (SDK v1.1.0+)
+
+```c
+static bool my_ocr(const char *image_path) { /* your OCR */ return true; }
+static const char *my_ocr_result(void) { return ""; }
+static bool my_layout(const char *image_path) { /* your layout */ return true; }
+static const char *my_layout_result(void) { return ""; }
+static bool my_table(const char *image_path) { /* your table */ return true; }
+static const char *my_table_result(void) { return ""; }
 
 CConvertCallback callback = {0};
-callback.progress = progress_callback;
-callback.cancel = cancel_callback;
+callback.ocr = my_ocr;
+callback.get_ocr_result = my_ocr_result;
+callback.layout = my_layout;
+callback.get_layout_result = my_layout_result;
+callback.table = my_table;
+callback.get_table_result = my_table_result;
 
-CPDF_StartPDFToWord(CPDF_TEXT("input.pdf"), CPDF_TEXT(""), CPDF_TEXT("output.docx"), option, &callback);
+CConvertOption option = CPDF_CONVERT_OPTION_DEFAULT;
+option.enable_ocr = true;
+option.enable_ai_layout = true;
+CPDF_StartPDFToWord("input.pdf", "", "output.docx", option, &callback);
 ```
 
-## Error Handling
+## Documentation
 
-All conversion APIs return `CSDKErrorCode`. Always check the result:
+- [Developer Guide](doc/developer_guide_c.md)
+- [API Reference](doc/api_reference_c.html)
 
-| Error Code | Meaning |
-| --- | --- |
-| `e_CErrSuccess` | Success |
-| `e_CErrFile` | File not found or cannot be opened |
-| `e_CErrPDFPassword` | Invalid PDF password |
-| `e_CErrPDFFormat` | Invalid or corrupted PDF |
-| `e_CErrLicenseInvalid` | Invalid license |
-| `e_CErrLicenseExpire` | License expired |
-| `e_CErrLicenseConcurrencyExceeded` | Concurrency limit exceeded |
-| `e_CErrOCRFailure` | OCR recognition failed |
-| `e_CErrConverting` | A conversion task is already running |
+## Contact
 
-## Running the Demo (Windows)
-
-1. Open `samples/demo_vs2022.sln` in Visual Studio 2022.
-2. Build via **Build > Build Solution**.
-3. Run the generated `.exe` from `samples/bin/`.
-
-Output files are written to `samples/output_files/`.
-
-## Running the Demo (Linux / macOS)
-
-```shell
-cd samples
-./RunDemo.sh
-```
-
-## Custom AI Models (SDK v4.1.0+)
-
-You can replace the built-in DocumentAI model with your own OCR, layout analysis, or table recognition engine via callback hooks on `CConvertCallback`. See the [developer guide](doc/developer_guide_c.md) for JSON schema details.
-
-## License
-
-This is a commercial SDK. Contact [support@pdfsolid.com](mailto:support@pdfsolid.com) for a trial or commercial license.
-
-## Support
-
-- Website: [https://www.pdfsolid.com](https://www.pdfsolid.com)
-- Email: [support@pdfsolid.com](mailto:support@pdfsolid.com)
+- Website: [https://www.pdfsolid.com](https://www.pdfsolid.com/)
+- Sales: [sales@pdfsolid.com](mailto:sales@pdfsolid.com)
+- Support: [support@pdfsolid.com](mailto:support@pdfsolid.com)
