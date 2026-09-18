@@ -1,4 +1,4 @@
-﻿var searchData=
+var searchData=
 [
   ['ccancel_0',['CCancel',['../pdfsolid__config__macros_8h.html#a39be504cfea6361750df9b44136e9a4d',1,'pdfsolid_config_macros.h']]],
   ['cconvertcallback_1',['CConvertCallback',['../pdfsolid__config__macros_8h.html#a43d0b02fabb4d970b39c02a8fe07fdaf',1,'pdfsolid_config_macros.h']]],

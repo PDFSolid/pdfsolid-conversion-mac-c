@@ -1,7 +1,7 @@
-﻿var pdfsolid__config__macros_8h =
+var pdfsolid__config__macros_8h =
 [
     [ "CConvertCallback", "struct_c_convert_callback.html", "struct_c_convert_callback" ],
-    [ "PDFSOLID_DECL", "pdfsolid__config__macros_8h.html#a66389c9c33678081cfca79f8db24e922", null ],
+    [ "PDFSOLID_DECL", "pdfsolid__config__macros_8h.html#a46e877460391544b3ab11ae712d087a6", null ],
     [ "CCancel", "pdfsolid__config__macros_8h.html#a39be504cfea6361750df9b44136e9a4d", null ],
     [ "CConvertCallback", "pdfsolid__config__macros_8h.html#a43d0b02fabb4d970b39c02a8fe07fdaf", null ],
     [ "CGetLayoutResultCallback", "pdfsolid__config__macros_8h.html#a1c52bb366c1564d0d1eec8ccc540b654", null ],

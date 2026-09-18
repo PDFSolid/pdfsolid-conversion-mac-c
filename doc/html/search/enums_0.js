@@ -1,4 +1,4 @@
-﻿var searchData=
+var searchData=
 [
   ['_5fcexcelworksheetoption_0',['_CExcelWorksheetOption',['../pdfsolid__basictypes__c_8h.html#a4affe3de0656cf3e112cb1743eb4d248',1,'pdfsolid_basictypes_c.h']]],
   ['_5fchtmloption_1',['_CHtmlOption',['../pdfsolid__basictypes__c_8h.html#ad21f43f3d0a75a87d8d1880d4ccb4482',1,'pdfsolid_basictypes_c.h']]],

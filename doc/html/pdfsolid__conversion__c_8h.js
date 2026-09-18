@@ -1,14 +1,14 @@
-﻿var pdfsolid__conversion__c_8h =
+var pdfsolid__conversion__c_8h =
 [
-    [ "CPDF_StartPDFToExcel", "pdfsolid__conversion__c_8h.html#a7a89f983da37b90cf26a857985ec6cf5", null ],
-    [ "CPDF_StartPDFToHtml", "pdfsolid__conversion__c_8h.html#a22baa4fabe93d1ecae3a215ed5efd7f5", null ],
-    [ "CPDF_StartPDFToImage", "pdfsolid__conversion__c_8h.html#af8fb5883e549ac00eb775a14f355af39", null ],
-    [ "CPDF_StartPDFToJson", "pdfsolid__conversion__c_8h.html#afc09b70461c14700dec89883ecdee6ac", null ],
-    [ "CPDF_StartPDFToMarkdown", "pdfsolid__conversion__c_8h.html#af81d52103fdbdf53f827e7c328b3bdbc", null ],
-    [ "CPDF_StartPDFToOfd", "pdfsolid__conversion__c_8h.html#aeb414aacff1c76880f6eb793d39fca82", null ],
-    [ "CPDF_StartPDFToPpt", "pdfsolid__conversion__c_8h.html#a86a57e0b9ebf73238eae6171ba6d18a0", null ],
-    [ "CPDF_StartPDFToRtf", "pdfsolid__conversion__c_8h.html#a2dd5814df3199d0edbaa73357c6c4b6c", null ],
-    [ "CPDF_StartPDFToSearchablePDF", "pdfsolid__conversion__c_8h.html#a89e38838b3f8819d8bf99322bc2c51f9", null ],
-    [ "CPDF_StartPDFToTxt", "pdfsolid__conversion__c_8h.html#aadcaae12d8d98b74689136bb072f1013", null ],
-    [ "CPDF_StartPDFToWord", "pdfsolid__conversion__c_8h.html#aa8009d3285d3458b1eea05d5d08f11d6", null ]
+    [ "CPDF_StartPDFToExcel", "pdfsolid__conversion__c_8h.html#a91a8c1024ab0d9a7631e972f85e4eacf", null ],
+    [ "CPDF_StartPDFToHtml", "pdfsolid__conversion__c_8h.html#ad3a1a6bd6f872a40b70419d89d352c86", null ],
+    [ "CPDF_StartPDFToImage", "pdfsolid__conversion__c_8h.html#a06527d4257ab274354474f011d49a2c1", null ],
+    [ "CPDF_StartPDFToJson", "pdfsolid__conversion__c_8h.html#aaf2b10371b34ddb3e2dbca98fd6dabce", null ],
+    [ "CPDF_StartPDFToMarkdown", "pdfsolid__conversion__c_8h.html#a16073c42292f6d23357dbf49fd3d6544", null ],
+    [ "CPDF_StartPDFToOfd", "pdfsolid__conversion__c_8h.html#a2476bb8f70055e47a03931e209333a60", null ],
+    [ "CPDF_StartPDFToPpt", "pdfsolid__conversion__c_8h.html#a1486a2468905f1f820e43048d4d3352c", null ],
+    [ "CPDF_StartPDFToRtf", "pdfsolid__conversion__c_8h.html#ad32e99ec103369b48f62d609d3802155", null ],
+    [ "CPDF_StartPDFToSearchablePDF", "pdfsolid__conversion__c_8h.html#ab795e57acb06891ee08ba5629bf3d0bf", null ],
+    [ "CPDF_StartPDFToTxt", "pdfsolid__conversion__c_8h.html#a1033120af344e441fb08e1e4ca27390f", null ],
+    [ "CPDF_StartPDFToWord", "pdfsolid__conversion__c_8h.html#a08fb7a79dd3789d1b8a751a7494a2fcf", null ]
 ];

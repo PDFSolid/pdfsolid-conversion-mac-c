@@ -13,16 +13,16 @@ extern "C" {
 
 #include "pdfsolid_basictypes_c.h"
 
-/// \brief Verifies the license for using the PDFSolidKit SDK.
+/// \brief Verifies the license for using the PDFSolid SDK.
 ///
-/// \param[in] license The license key string provided by PDFSolidKit.
+/// \param[in] license The license key string provided by PDFSolid.
 /// \param[in] device_id Unique identifier of the device on which the SDK will be used.
 /// \param[in] app_id Application ID associated with the license.
 /// \return \link CSDKErrorCode \endlink indicating the success or failure of the license verification process.
 PDFSOLID_DECL
 CSDKErrorCode CSDK_PDFSOLID_CALL CPDF_LicenseVerify(const char* license, const char* device_id, const char* app_id);
 
-/// \brief Initializes the PDFSolidKit SDK with the specified resource path.
+/// \brief Initializes the PDFSolid SDK with the specified resource path.
 ///
 /// \param[in] resource_path Path to the resources required by the SDK.
 PDFSOLID_DECL
@@ -58,13 +58,13 @@ int CSDK_PDFSOLID_CALL CPDF_GetPageCount(PDFSOLID_STRING file_path, PDFSOLID_STR
 PDFSOLID_DECL
 int CSDK_PDFSOLID_CALL CPDF_GetRemainingPageQuota();
 
-/// \brief Retrieves the version of the PDFSolidKit SDK.
+/// \brief Retrieves the version of the PDFSolid SDK.
 ///
 /// \param[out] version Pointer to a buffer where the SDK version will be stored.
 PDFSOLID_DECL
 void CSDK_PDFSOLID_CALL CPDF_GetVersion(char* version);
 
-/// \brief Releases all resources and cleans up the PDFSolidKit SDK.
+/// \brief Releases all resources and cleans up the PDFSolid SDK.
 PDFSOLID_DECL
 void CSDK_PDFSOLID_CALL CPDF_Release();
 

@@ -1,13 +1,13 @@
-﻿var pdfsolid__common__c_8h =
+var pdfsolid__common__c_8h =
 [
-    [ "CPDF_GetPageCount", "pdfsolid__common__c_8h.html#a900f48f599c764e503531042d19b2386", null ],
-    [ "CPDF_GetRemainingPageQuota", "pdfsolid__common__c_8h.html#a17c9caec1b1e6b5c72d51fe0bfc22008", null ],
-    [ "CPDF_GetVersion", "pdfsolid__common__c_8h.html#aa83c6196b04d1764222ed678b667206b", null ],
-    [ "CPDF_Initialize", "pdfsolid__common__c_8h.html#ad4a3785a43052536c28607f8f83a1676", null ],
-    [ "CPDF_LicenseVerify", "pdfsolid__common__c_8h.html#a20359935b5eef6fa66110c67c8087452", null ],
-    [ "CPDF_Release", "pdfsolid__common__c_8h.html#a21f7ab6657134ec9f709a2b12e7db24d", null ],
-    [ "CPDF_ReleaseDocumentAIModel", "pdfsolid__common__c_8h.html#ab62d9881e3ac2eaf24c2cc6cb4d6d143", null ],
-    [ "CPDF_SetDocumentAIModel", "pdfsolid__common__c_8h.html#ac4c00f235c7c35ef483d82b25a779c9e", null ],
-    [ "CPDF_SetDocumentAIModelCount", "pdfsolid__common__c_8h.html#a51ea15351d8ea94f9ea25c92b9dad6a7", null ],
-    [ "CPDF_SetLogger", "pdfsolid__common__c_8h.html#af97567dccf8b337f708bac27c0c62717", null ]
+    [ "CPDF_GetPageCount", "pdfsolid__common__c_8h.html#a168596ce3965161c612d7251c673f6b3", null ],
+    [ "CPDF_GetRemainingPageQuota", "pdfsolid__common__c_8h.html#a76fdf6b38a505080669f91d17b36080a", null ],
+    [ "CPDF_GetVersion", "pdfsolid__common__c_8h.html#a7281d797e4a82f758d9e13cf8da3d102", null ],
+    [ "CPDF_Initialize", "pdfsolid__common__c_8h.html#aaf21f4861b5c21f2910ca472d2fa6500", null ],
+    [ "CPDF_LicenseVerify", "pdfsolid__common__c_8h.html#a04f1c9c2771a6b3f6ebff2880c192387", null ],
+    [ "CPDF_Release", "pdfsolid__common__c_8h.html#a7f57f1dd195cbfac14292a2a8ab02ac8", null ],
+    [ "CPDF_ReleaseDocumentAIModel", "pdfsolid__common__c_8h.html#a611f51b56d271245401f0362ce358b82", null ],
+    [ "CPDF_SetDocumentAIModel", "pdfsolid__common__c_8h.html#a4203d5b090d479a9621d7815654c8a3f", null ],
+    [ "CPDF_SetDocumentAIModelCount", "pdfsolid__common__c_8h.html#a665e60f6213891d8ee2d1418cf53cf2d", null ],
+    [ "CPDF_SetLogger", "pdfsolid__common__c_8h.html#a61a75f5a965cf2215497f251be907617", null ]
 ];

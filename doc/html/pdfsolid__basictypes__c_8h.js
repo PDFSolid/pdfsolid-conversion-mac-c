@@ -1,8 +1,9 @@
-﻿var pdfsolid__basictypes__c_8h =
+var pdfsolid__basictypes__c_8h =
 [
     [ "_CConvertOption", "struct___c_convert_option.html", "struct___c_convert_option" ],
-    [ "PDFSOLID_STRING", "pdfsolid__basictypes__c_8h.html#a0de97e1e7f5825565f0882eeb464deb7", null ],
-    [ "CSDK_PDFSOLID_CALL", "pdfsolid__basictypes__c_8h.html#a532c1bb9b9764acb77005fdaba5b6a68", null ],
+    [ "CPDF_CONVERT_OPTION_DEFAULT", "pdfsolid__basictypes__c_8h.html#a585898210f32b77be1eb645909b31308", null ],
+    [ "CSDK_PDFSOLID_CALL", "pdfsolid__basictypes__c_8h.html#adcbce48bd49d189556cbcafcda61aafc", null ],
+    [ "PDFSOLID_STRING", "pdfsolid__basictypes__c_8h.html#a80bb99be69f2d4637a9bc88d55f94167", null ],
     [ "CConvertOption", "pdfsolid__basictypes__c_8h.html#aca457290a7da0f1b39ffdff7ddc75df4", null ],
     [ "CExcelWorksheetOption", "pdfsolid__basictypes__c_8h.html#a7b768928882384178293ddd7632b6e4f", null ],
     [ "CHtmlOption", "pdfsolid__basictypes__c_8h.html#abfd0b67343db05f725bf2637c7be8f08", null ],
@@ -110,6 +111,7 @@
       [ "e_CErrLicenseUnsupportedAPI", "pdfsolid__basictypes__c_8h.html#a3593ebddb4f90b645595c4defad4e8e6a0f7ff83cc0dadf16d100608d60c3dd58", null ],
       [ "e_CErrLicenseMismatch", "pdfsolid__basictypes__c_8h.html#a3593ebddb4f90b645595c4defad4e8e6a99a013a7cce12619e6a8e14968987f0d", null ],
       [ "e_CErrInvalidTable", "pdfsolid__basictypes__c_8h.html#a3593ebddb4f90b645595c4defad4e8e6aeb2ad07c1331b3a9ff775ca39f5a8a7a", null ],
+      [ "e_CErrUnsupportedFeature", "pdfsolid__basictypes__c_8h.html#a3593ebddb4f90b645595c4defad4e8e6a60f6288d4b3dc32674cfa3e0aaf9d8c7", null ],
       [ "e_CErrUnknown", "pdfsolid__basictypes__c_8h.html#a3593ebddb4f90b645595c4defad4e8e6aac9a7800bb63a7249e4dade05620fd82", null ]
     ] ]
 ];

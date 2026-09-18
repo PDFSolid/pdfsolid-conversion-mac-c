@@ -1,0 +1,24 @@
+{
+  "product": "PDFSolid Conversion SDK",
+  "version": "1.2.0",
+  "upstream_release_family": "4.2.0",
+  "branch": "pdf_solid",
+  "commit": "8dce9e22bc62bb5a7458823bfb95086c4f31fd0f",
+  "cyan_commit": "4288bc453355d7fb4dd1a6f1c21b3d48849b8e10",
+  "blue_version": "1.12.0",
+  "build_date": "2026-09-18",
+  "architectures": [
+    "arm64",
+    "x86_64"
+  ],
+  "minimum_os": "macOS 11.0 (bundled AI libraries)",
+  "document_ai": true,
+  "word_to_pdf": false,
+  "online_license_verification": true,
+  "signing": "ad-hoc; re-sign for application distribution",
+  "validation_limits": [
+    "Buyout-license update entitlement behavior has not been verified.",
+    "Intel runtime tests, when listed in the delivery report, use Rosetta on Apple Silicon.",
+    "Minimum supported macOS versions have not been runtime-tested."
+  ]
+}

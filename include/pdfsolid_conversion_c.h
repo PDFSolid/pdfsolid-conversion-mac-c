@@ -22,6 +22,17 @@ extern "C" {
 PDFSOLID_DECL
 CSDKErrorCode CSDK_PDFSOLID_CALL CPDF_StartPDFToWord(PDFSOLID_STRING file_path, PDFSOLID_STRING password, PDFSOLID_STRING output_path, CConvertOption options, CConvertCallback* callback);
 
+#ifdef ENABLE_WORD2PDF
+/// \brief Starts the conversion of a Word document to a PDF file.
+///
+/// \param[in] file_path Path to the input Word document.
+/// \param[in] output_path Path where the converted PDF file will be saved.
+/// \param[in] callback Optional \link CConvertCallback \endlink function for handling convert operations.
+/// \return \link CSDKErrorCode \endlink indicating the success or failure of the operation.
+PDFSOLID_DECL
+CSDKErrorCode CSDK_PDFSOLID_CALL CPDF_StartWordToPDF(PDFSOLID_STRING file_path, PDFSOLID_STRING output_path, CConvertCallback* callback);
+#endif
+
 /// \brief Starts the conversion of a PDF file to an RTF document.
 ///
 /// \param[in] file_path Path to the input PDF file.

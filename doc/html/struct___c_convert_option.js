@@ -6,6 +6,8 @@ var struct___c_convert_option =
     [ "contain_page_background_image", "struct___c_convert_option.html#a16209487e6e29de272ed294dde479944", null ],
     [ "enable_ai_layout", "struct___c_convert_option.html#a46b8f03ce089ebcd48a4412a4754bab9", null ],
     [ "enable_ai_table_recognition", "struct___c_convert_option.html#aaab19f7af52ef720c6f04b1dfe7a4055", null ],
+    [ "enable_document_dewarp", "struct___c_convert_option.html#a4ebd466e3e39653827a9b5df9846a9cc", null ],
+    [ "enable_document_orientation_classification", "struct___c_convert_option.html#a8246904a6bb6887ce20a5373ccf711f9", null ],
     [ "enable_ocr", "struct___c_convert_option.html#ac3845a61914952de988d57c73332ea2b", null ],
     [ "excel_all_content", "struct___c_convert_option.html#a40f4ba4ec254482c9ee6fe3b2404c970", null ],
     [ "excel_csv_format", "struct___c_convert_option.html#a3266698dfd0b3f07ba6c4815942f09ca", null ],

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
@@ -25,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PDFSolid C API<span id="projectnumber">&#160;4.1.0</span>
+   <div id="projectname">PDFSolid C API<span id="projectnumber">&#160;1.2.0</span>
    </div>
+   <div id="projectbrief">API Documentation</div>
   </td>
  </tr>
  </tbody>
@@ -181,11 +182,15 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:adc8b30ad2a64345f83ef682bf646e774"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pdfsolid__basictypes__c_8h.html#aad628494bf04b6f47d977cabc3cd8b1c">COCRLanguage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___c_convert_option.html#adc8b30ad2a64345f83ef682bf646e774">languages</a></td></tr>
 <tr class="memdesc:adc8b30ad2a64345f83ef682bf646e774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify the OCR languages.  <br /></td></tr>
 <tr class="separator:adc8b30ad2a64345f83ef682bf646e774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8246904a6bb6887ce20a5373ccf711f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___c_convert_option.html#a8246904a6bb6887ce20a5373ccf711f9">enable_document_orientation_classification</a></td></tr>
+<tr class="memdesc:a8246904a6bb6887ce20a5373ccf711f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to classify and correct document orientation before OCR image recognition.  <br /></td></tr>
+<tr class="separator:a8246904a6bb6887ce20a5373ccf711f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ebd466e3e39653827a9b5df9846a9cc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___c_convert_option.html#a4ebd466e3e39653827a9b5df9846a9cc">enable_document_dewarp</a></td></tr>
+<tr class="memdesc:a4ebd466e3e39653827a9b5df9846a9cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to apply DocumentAI dewarp before OCR image recognition.  <br /></td></tr>
+<tr class="separator:a4ebd466e3e39653827a9b5df9846a9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Convert options. </p>
-
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00217">217</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="ab789fdcc6f56852f2dfdaf17e56d8828" name="ab789fdcc6f56852f2dfdaf17e56d8828"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab789fdcc6f56852f2dfdaf17e56d8828">&#9670;&#160;</a></span>auto_create_folder</h2>
@@ -200,8 +205,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Whether to automatically create folder when exporting multiple documents. </p>
-
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00258">258</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
 
 </div>
 </div>
@@ -219,8 +222,6 @@ Public Attributes</h2></td></tr>
 
 <p>Whether to contain annotations when converting. </p>
 
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00234">234</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
-
 </div>
 </div>
 <a id="ac24b2088dcfb8e1ce64e396e5ab2c563" name="ac24b2088dcfb8e1ce64e396e5ab2c563"></a>
@@ -236,8 +237,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Whether to contain images when converting,which takes effect only when enable_ocr is false. </p>
-
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00225">225</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
 
 </div>
 </div>
@@ -255,8 +254,6 @@ Public Attributes</h2></td></tr>
 
 <p>Whether to contain page background images when converting,which takes effect only when enable_ocr is true. </p>
 
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00228">228</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
-
 </div>
 </div>
 <a id="a46b8f03ce089ebcd48a4412a4754bab9" name="a46b8f03ce089ebcd48a4412a4754bab9"></a>
@@ -272,8 +269,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Whether to enable AI layout analysis during conversion. </p>
-
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00219">219</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
 
 </div>
 </div>
@@ -291,7 +286,37 @@ Public Attributes</h2></td></tr>
 
 <p>Whether to enable AI table recognition during conversion. </p>
 
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00222">222</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
+</div>
+</div>
+<a id="a4ebd466e3e39653827a9b5df9846a9cc" name="a4ebd466e3e39653827a9b5df9846a9cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ebd466e3e39653827a9b5df9846a9cc">&#9670;&#160;</a></span>enable_document_dewarp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _CConvertOption::enable_document_dewarp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether to apply DocumentAI dewarp before OCR image recognition. </p>
+
+</div>
+</div>
+<a id="a8246904a6bb6887ce20a5373ccf711f9" name="a8246904a6bb6887ce20a5373ccf711f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8246904a6bb6887ce20a5373ccf711f9">&#9670;&#160;</a></span>enable_document_orientation_classification</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _CConvertOption::enable_document_orientation_classification</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether to classify and correct document orientation before OCR image recognition. </p>
 
 </div>
 </div>
@@ -309,8 +334,6 @@ Public Attributes</h2></td></tr>
 
 <p>Whether to use OCR. </p>
 
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00243">243</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
-
 </div>
 </div>
 <a id="a40f4ba4ec254482c9ee6fe3b2404c970" name="a40f4ba4ec254482c9ee6fe3b2404c970"></a>
@@ -326,8 +349,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Whether to set contain all pdf content to the xlsx file. </p>
-
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00237">237</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
 
 </div>
 </div>
@@ -345,8 +366,6 @@ Public Attributes</h2></td></tr>
 
 <p>Whether to set to save the table in csv format. </p>
 
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00240">240</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
-
 </div>
 </div>
 <a id="a15302cd534a9c3d500d4a6810084f1ee" name="a15302cd534a9c3d500d4a6810084f1ee"></a>
@@ -362,8 +381,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Specify the Excel worksheet option. </p>
-
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00273">273</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
 
 </div>
 </div>
@@ -381,8 +398,6 @@ Public Attributes</h2></td></tr>
 
 <p>Specify the fontname to convert, e.g. "Arial". </p>
 
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00288">288</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
-
 </div>
 </div>
 <a id="ae9fabc5a843d5726ff98dd7c34ea6489" name="ae9fabc5a843d5726ff98dd7c34ea6489"></a>
@@ -398,8 +413,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Whether to convert formulas to images. </p>
-
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00255">255</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
 
 </div>
 </div>
@@ -417,8 +430,6 @@ Public Attributes</h2></td></tr>
 
 <p>Specify the Html option. </p>
 
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00276">276</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
-
 </div>
 </div>
 <a id="a40009a00ccd2551ac790d92a2d68ce99" name="a40009a00ccd2551ac790d92a2d68ce99"></a>
@@ -434,8 +445,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Specify the image color mode of the image file. </p>
-
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00282">282</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
 
 </div>
 </div>
@@ -453,8 +462,6 @@ Public Attributes</h2></td></tr>
 
 <p>Whether to enhance the image path. </p>
 
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00252">252</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
-
 </div>
 </div>
 <a id="aa09b70a60d0856c39d1a88b7232463c4" name="aa09b70a60d0856c39d1a88b7232463c4"></a>
@@ -470,8 +477,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Specify the image scaling of the image file. </p>
-
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00267">267</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
 
 </div>
 </div>
@@ -489,8 +494,6 @@ Public Attributes</h2></td></tr>
 
 <p>Specify the image type of the image file. </p>
 
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00285">285</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
-
 </div>
 </div>
 <a id="ac585100f7b57de91b7950a226f783ab1" name="ac585100f7b57de91b7950a226f783ab1"></a>
@@ -506,8 +509,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Whether to contain table when convert pdf to json. </p>
-
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00231">231</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
 
 </div>
 </div>
@@ -525,8 +526,6 @@ Public Attributes</h2></td></tr>
 
 <p>Number of OCR languages specified in the languages array. </p>
 
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00264">264</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
-
 </div>
 </div>
 <a id="adc8b30ad2a64345f83ef682bf646e774" name="adc8b30ad2a64345f83ef682bf646e774"></a>
@@ -542,8 +541,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Specify the OCR languages. </p>
-
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00294">294</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
 
 </div>
 </div>
@@ -561,8 +558,6 @@ Public Attributes</h2></td></tr>
 
 <p>Specify the OCR option. </p>
 
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00279">279</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
-
 </div>
 </div>
 <a id="a30a002ff71997fd6d596c85a2bd770df" name="a30a002ff71997fd6d596c85a2bd770df"></a>
@@ -578,8 +573,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>whether to output one document per page. </p>
-
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00261">261</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
 
 </div>
 </div>
@@ -597,8 +590,6 @@ Public Attributes</h2></td></tr>
 
 <p>Specify the layout mode. </p>
 
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00270">270</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
-
 </div>
 </div>
 <a id="a9419a8c7b8f853213f9931964e55f049" name="a9419a8c7b8f853213f9931964e55f049"></a>
@@ -614,8 +605,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Specify the pages to convert, e.g. "1-3,5,7-9". </p>
-
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00291">291</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
 
 </div>
 </div>
@@ -633,8 +622,6 @@ Public Attributes</h2></td></tr>
 
 <p>Whether to make the text transparent in the output document. </p>
 
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00246">246</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
-
 </div>
 </div>
 <a id="ab8dc70d6579292099dbca414444e8a17" name="ab8dc70d6579292099dbca414444e8a17"></a>
@@ -651,12 +638,10 @@ Public Attributes</h2></td></tr>
 
 <p>Whether format table when convert pdf to txt. </p>
 
-<p class="definition">Definition at line <a class="el" href="pdfsolid__basictypes__c_8h_source.html#l00249">249</a> of file <a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a></li>
+<li>build/api_reference/public_c/<a class="el" href="pdfsolid__basictypes__c_8h_source.html">pdfsolid_basictypes_c.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

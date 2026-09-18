@@ -1,4 +1,4 @@
-﻿/*
+/*
  @licstart  The following is the entire license notice for the JavaScript code in this file.
 
  The MIT License (MIT)
@@ -25,11 +25,7 @@
 var NAVTREE =
 [
   [ "PDFSolid C API", "index.html", [
-    [ "1. Overview", "md_build_api_reference_public_c_mainpage.html", [
-      [ "1.1 Why PDFSolid Conversion SDK", "md_build_api_reference_public_c_mainpage.html#autotoc_md1", null ],
-      [ "1.2 PDFSolid Conversion SDK", "md_build_api_reference_public_c_mainpage.html#autotoc_md2", null ],
-      [ "1.3 License & Trial", "md_build_api_reference_public_c_mainpage.html#autotoc_md3", null ]
-    ] ],
+    [ "PDFSolid Conversion documentation", "index.html", "index" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

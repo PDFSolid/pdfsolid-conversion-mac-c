@@ -1,17 +1,12 @@
-arch=$(uname -m)
-echo "$arch"
-
-demo_name="demo"
-
-if [ -d "build" ]
-then
-    cd build
-else
-    mkdir build
-    cd build
+#!/bin/bash
+set -euo pipefail
+here="$(cd "$(dirname "$0")" && pwd)"
+root="$(cd "$here/../.." && pwd)"
+cmake -S "$here" -B "$here/build" -DCMAKE_BUILD_TYPE=Release
+cmake --build "$here/build" --parallel 4
+if [[ $# -gt 0 ]]; then
+    exec "$here/build/demo" "$@"
 fi
-
-cmake ..
-make -j10
-
-./$demo_name
+mkdir -p "$root/samples/output_files"
+exec "$here/build/demo" "$root/resource/license/license.xml" "$root/resource" \
+    "$root/samples/input_files/word.pdf" "$root/samples/output_files/word-$(date +%Y%m%d-%H%M%S).docx"
