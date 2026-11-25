@@ -1,5 +1,6 @@
 var pdfsolid__conversion__c_8h =
 [
+    [ "CPDF_WORD_TO_PDF_DIAGNOSTICS_SIZE", "pdfsolid__conversion__c_8h.html#a84900181097b125f126cb7565d0eb9c5", null ],
     [ "CPDF_StartPDFToExcel", "pdfsolid__conversion__c_8h.html#a91a8c1024ab0d9a7631e972f85e4eacf", null ],
     [ "CPDF_StartPDFToHtml", "pdfsolid__conversion__c_8h.html#ad3a1a6bd6f872a40b70419d89d352c86", null ],
     [ "CPDF_StartPDFToImage", "pdfsolid__conversion__c_8h.html#a06527d4257ab274354474f011d49a2c1", null ],
@@ -10,5 +11,6 @@ var pdfsolid__conversion__c_8h =
     [ "CPDF_StartPDFToRtf", "pdfsolid__conversion__c_8h.html#ad32e99ec103369b48f62d609d3802155", null ],
     [ "CPDF_StartPDFToSearchablePDF", "pdfsolid__conversion__c_8h.html#ab795e57acb06891ee08ba5629bf3d0bf", null ],
     [ "CPDF_StartPDFToTxt", "pdfsolid__conversion__c_8h.html#a1033120af344e441fb08e1e4ca27390f", null ],
-    [ "CPDF_StartPDFToWord", "pdfsolid__conversion__c_8h.html#a08fb7a79dd3789d1b8a751a7494a2fcf", null ]
+    [ "CPDF_StartPDFToWord", "pdfsolid__conversion__c_8h.html#a08fb7a79dd3789d1b8a751a7494a2fcf", null ],
+    [ "CPDF_StartWordToPDF", "pdfsolid__conversion__c_8h.html#a869efe3975614aba7d9c23862c43cc03", null ]
 ];

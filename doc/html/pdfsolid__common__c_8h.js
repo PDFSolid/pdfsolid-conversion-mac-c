@@ -1,5 +1,6 @@
 var pdfsolid__common__c_8h =
 [
+    [ "CPDF_GetLicenseType", "pdfsolid__common__c_8h.html#a4d3106fe8929552056047c4701636a77", null ],
     [ "CPDF_GetPageCount", "pdfsolid__common__c_8h.html#a168596ce3965161c612d7251c673f6b3", null ],
     [ "CPDF_GetRemainingPageQuota", "pdfsolid__common__c_8h.html#a76fdf6b38a505080669f91d17b36080a", null ],
     [ "CPDF_GetVersion", "pdfsolid__common__c_8h.html#a7281d797e4a82f758d9e13cf8da3d102", null ],

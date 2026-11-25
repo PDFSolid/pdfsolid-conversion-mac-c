@@ -4,8 +4,11 @@ var struct___c_convert_option =
     [ "contain_annotation", "struct___c_convert_option.html#ae76cc5ab8ffdaa56ab3fc4c7746d87d8", null ],
     [ "contain_image", "struct___c_convert_option.html#ac24b2088dcfb8e1ce64e396e5ab2c563", null ],
     [ "contain_page_background_image", "struct___c_convert_option.html#a16209487e6e29de272ed294dde479944", null ],
+    [ "custom_page_height", "struct___c_convert_option.html#a6e1a429bd65877014fd9a9a849735c74", null ],
+    [ "custom_page_width", "struct___c_convert_option.html#adc5f0e817513eb8ae3bec3c1adc99787", null ],
     [ "enable_ai_layout", "struct___c_convert_option.html#a46b8f03ce089ebcd48a4412a4754bab9", null ],
     [ "enable_ai_table_recognition", "struct___c_convert_option.html#aaab19f7af52ef720c6f04b1dfe7a4055", null ],
+    [ "enable_auto_page_size", "struct___c_convert_option.html#a8a375b427b3d3c786b15050470d0a0c3", null ],
     [ "enable_document_dewarp", "struct___c_convert_option.html#a4ebd466e3e39653827a9b5df9846a9cc", null ],
     [ "enable_document_orientation_classification", "struct___c_convert_option.html#a8246904a6bb6887ce20a5373ccf711f9", null ],
     [ "enable_ocr", "struct___c_convert_option.html#ac3845a61914952de988d57c73332ea2b", null ],
@@ -26,6 +29,8 @@ var struct___c_convert_option =
     [ "output_document_per_page", "struct___c_convert_option.html#a30a002ff71997fd6d596c85a2bd770df", null ],
     [ "page_layout_mode", "struct___c_convert_option.html#a430a06f389ff8c921f1f4b6949edcc6f", null ],
     [ "page_ranges", "struct___c_convert_option.html#a9419a8c7b8f853213f9931964e55f049", null ],
+    [ "table_recognition_accuracy", "struct___c_convert_option.html#ada8ec1d6e161b04bf7220e54dcd71634", null ],
     [ "transparent_text", "struct___c_convert_option.html#aaf3d0855c57a66e116cd314069e5d3da", null ],
-    [ "txt_table_format", "struct___c_convert_option.html#ab8dc70d6579292099dbca414444e8a17", null ]
+    [ "txt_table_format", "struct___c_convert_option.html#ab8dc70d6579292099dbca414444e8a17", null ],
+    [ "word_pdf_bookmark_mode", "struct___c_convert_option.html#aec076a4348c0a7b09ffb862ef5122ecd", null ]
 ];

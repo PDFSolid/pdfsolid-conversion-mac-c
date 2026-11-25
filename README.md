@@ -1,15 +1,17 @@
 # PDFSolid Conversion SDK for C (macOS)
 
-High-performance C SDK for converting PDF to Word, Excel, PowerPoint, HTML, Image, TXT, RTF, CSV, JSON, Markdown, Searchable PDF, and OFD with AI-powered OCR, layout analysis, and table recognition.
+High-performance C SDK for converting PDF to Word, Excel, PowerPoint, HTML, Image, TXT, RTF, CSV, JSON, Markdown, Searchable PDF, and OFD with AI-powered OCR, layout analysis, and table recognition. SDK v1.3.0 also converts Word documents (`.docx`) to PDF.
 
 ## Features
 
 - **PDF to Word** (.docx) — Flow and Box layout modes
+- **Word to PDF** (.docx → .pdf) — optional page ranges and PDF bookmarks
 - **PDF to Excel** (.xlsx) — per-table, per-page, or per-document worksheet options
 - **PDF to PowerPoint** (.pptx)
 - **PDF to HTML** (.html) — single/multi-page with optional bookmark navigation
 - **PDF to CSV** (.csv)
 - **PDF to Image** (.png, .jpg, .jpeg, .jpeg2000, .bmp, .tiff, .tga, .gif, .webp) — color/grayscale/binary, configurable scaling
+- **Image to Image** — supported image inputs, including individual frames of multi-page TIFF files
 - **PDF to Plain Text** (.txt) — optional table format preservation
 - **PDF to RTF** (.rtf)
 - **PDF to Searchable PDF** (.pdf) — OCR with transparent text layer
@@ -28,7 +30,7 @@ High-performance C SDK for converting PDF to Word, Excel, PowerPoint, HTML, Imag
 
 | Platform | System Requirements | Development Environment |
 | -------- | ------------------- | ----------------------- |
-| macOS | macOS 10.14+ (Intel, Apple Silicon) | Xcode 13.0+ |
+| macOS | macOS 11.0+ (Intel x86_64, Apple Silicon arm64) | Xcode 13.0+ |
 
 ## Quick Start
 
@@ -65,6 +67,22 @@ CPDF_Release();
 ```
 
 ## Conversion Examples
+
+### Word (DOCX) to PDF
+
+After applying the license and initializing the SDK, pass the input `.docx` path and a writable output `.pdf` path.
+
+```c
+#include <stddef.h>
+#include "pdfsolid_conversion_c.h"
+
+CConvertOption word_options = CPDF_CONVERT_OPTION_DEFAULT;
+CSDKErrorCode result = CPDF_StartWordToPDF("input.docx", "output.pdf", word_options, NULL, NULL);
+```
+
+The default converts all pages without PDF bookmarks. Set `word_options.page_ranges` to select pages (for example, `1-2`) and `word_options.word_pdf_bookmark_mode` to generate bookmarks from headings or Word bookmarks. Check the returned status before using the PDF. `e_CErrUnsupportedFeature` means the input contains features that may affect fidelity; a PDF may still have been written.
+
+To collect diagnostics, pass a caller-owned `char` buffer of `CPDF_WORD_TO_PDF_DIAGNOSTICS_SIZE` bytes as the last argument. See the [public header](include/pdfsolid_conversion_c.h) and [C sample](samples/demo/demo.c).
 
 ### PDF to Excel
 

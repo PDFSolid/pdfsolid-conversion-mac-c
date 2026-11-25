@@ -9,10 +9,13 @@ var pdfsolid__basictypes__c_8h =
     [ "CHtmlOption", "pdfsolid__basictypes__c_8h.html#abfd0b67343db05f725bf2637c7be8f08", null ],
     [ "CImageColorMode", "pdfsolid__basictypes__c_8h.html#a4dcbf26547b2bcbd4f8e77b836de1e54", null ],
     [ "CImageType", "pdfsolid__basictypes__c_8h.html#a01a2a84083e74019b65da1d304b9ee9f", null ],
+    [ "CLicenseType", "pdfsolid__basictypes__c_8h.html#a541dc8bd4d2af876acb372c94a771ff4", null ],
     [ "COCRLanguage", "pdfsolid__basictypes__c_8h.html#aad628494bf04b6f47d977cabc3cd8b1c", null ],
     [ "COCROption", "pdfsolid__basictypes__c_8h.html#a31192c30c72d860933b44c01fe0e5fa3", null ],
     [ "CPageLayoutMode", "pdfsolid__basictypes__c_8h.html#a65dadcfcbb09c46bb185bc18b4007f13", null ],
     [ "CSDKErrorCode", "pdfsolid__basictypes__c_8h.html#ab08568672ac56ca510044e7bb2e42be6", null ],
+    [ "CTableRecognitionAccuracy", "pdfsolid__basictypes__c_8h.html#a9f2ca74b86835fb51122df1352a78296", null ],
+    [ "CWordPdfBookmarkMode", "pdfsolid__basictypes__c_8h.html#aeafccebe1098f67a2dc6a1ddafd20b27", null ],
     [ "_CExcelWorksheetOption", "pdfsolid__basictypes__c_8h.html#a4affe3de0656cf3e112cb1743eb4d248", [
       [ "e_CForTable", "pdfsolid__basictypes__c_8h.html#a4affe3de0656cf3e112cb1743eb4d248a4448028b73d99beb64c232e056433306", null ],
       [ "e_CForPage", "pdfsolid__basictypes__c_8h.html#a4affe3de0656cf3e112cb1743eb4d248a0647770da96bea6803c26d8f4c422ec9", null ],
@@ -39,6 +42,11 @@ var pdfsolid__basictypes__c_8h =
       [ "e_CTGA", "pdfsolid__basictypes__c_8h.html#a49d6260035d0639cc2acffa7eb735a60ad1bac67170cef355ffed7be6eae3c2aa", null ],
       [ "e_CGIF", "pdfsolid__basictypes__c_8h.html#a49d6260035d0639cc2acffa7eb735a60a96764eef2fb44c3c8c93ccbf73b532cf", null ],
       [ "e_CWEBP", "pdfsolid__basictypes__c_8h.html#a49d6260035d0639cc2acffa7eb735a60a29ed13042d35abff98ea078c533b392b", null ]
+    ] ],
+    [ "_CLicenseType", "pdfsolid__basictypes__c_8h.html#ac9b8310059d1cf1d89cc675fccb6eae2", [
+      [ "e_CLicenseUnknown", "pdfsolid__basictypes__c_8h.html#ac9b8310059d1cf1d89cc675fccb6eae2a9f448fe1ecafec3e63aa0ba5f72faf50", null ],
+      [ "e_CLicenseTrial", "pdfsolid__basictypes__c_8h.html#ac9b8310059d1cf1d89cc675fccb6eae2a3455c1ad7673a11db497fee21f128a4a", null ],
+      [ "e_CLicenseFormal", "pdfsolid__basictypes__c_8h.html#ac9b8310059d1cf1d89cc675fccb6eae2a0b7ba20790e5920282679a27d9cbfea0", null ]
     ] ],
     [ "_COCRLanguage", "pdfsolid__basictypes__c_8h.html#a5b18af8e69acc21e4d7260c3838b1e19", [
       [ "e_CUNKNOWN", "pdfsolid__basictypes__c_8h.html#a5b18af8e69acc21e4d7260c3838b1e19a1d549c20bfc324fc6eec02b676fe0f1a", null ],
@@ -113,5 +121,14 @@ var pdfsolid__basictypes__c_8h =
       [ "e_CErrInvalidTable", "pdfsolid__basictypes__c_8h.html#a3593ebddb4f90b645595c4defad4e8e6aeb2ad07c1331b3a9ff775ca39f5a8a7a", null ],
       [ "e_CErrUnsupportedFeature", "pdfsolid__basictypes__c_8h.html#a3593ebddb4f90b645595c4defad4e8e6a60f6288d4b3dc32674cfa3e0aaf9d8c7", null ],
       [ "e_CErrUnknown", "pdfsolid__basictypes__c_8h.html#a3593ebddb4f90b645595c4defad4e8e6aac9a7800bb63a7249e4dade05620fd82", null ]
+    ] ],
+    [ "_CTableRecognitionAccuracy", "pdfsolid__basictypes__c_8h.html#ae08e3719352d0d202d757212291d6333", [
+      [ "e_CHighAccuracy", "pdfsolid__basictypes__c_8h.html#ae08e3719352d0d202d757212291d6333aaf69cfd29cf44e64af9621ad7aa1d7b5", null ],
+      [ "e_CBalanced", "pdfsolid__basictypes__c_8h.html#ae08e3719352d0d202d757212291d6333ad6e91059bfadf6772294647ecfede938", null ]
+    ] ],
+    [ "_CWordPdfBookmarkMode", "pdfsolid__basictypes__c_8h.html#a1f54de5c9547bea34be87ec73528cfc9", [
+      [ "e_CWordPdfBookmarkNone", "pdfsolid__basictypes__c_8h.html#a1f54de5c9547bea34be87ec73528cfc9ab22d803c50a5ccd52112758f7aeca336", null ],
+      [ "e_CWordPdfBookmarkHeadings", "pdfsolid__basictypes__c_8h.html#a1f54de5c9547bea34be87ec73528cfc9a2e5abea46a239920185957a706d98aee", null ],
+      [ "e_CWordPdfBookmarkWordBookmarks", "pdfsolid__basictypes__c_8h.html#a1f54de5c9547bea34be87ec73528cfc9a2ff9223a9028ba91111cfba6c9e3ed11", null ]
     ] ]
 ];

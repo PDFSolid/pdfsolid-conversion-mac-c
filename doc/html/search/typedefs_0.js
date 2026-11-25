@@ -11,12 +11,15 @@ var searchData=
   ['cimagecolormode_8',['CImageColorMode',['../pdfsolid__basictypes__c_8h.html#a4dcbf26547b2bcbd4f8e77b836de1e54',1,'pdfsolid_basictypes_c.h']]],
   ['cimagetype_9',['CImageType',['../pdfsolid__basictypes__c_8h.html#a01a2a84083e74019b65da1d304b9ee9f',1,'pdfsolid_basictypes_c.h']]],
   ['clayoutcallback_10',['CLayoutCallback',['../pdfsolid__config__macros_8h.html#a0469fc1b15dcd0ee127942537cc3ab32',1,'pdfsolid_config_macros.h']]],
-  ['cocrcallback_11',['COCRCallback',['../pdfsolid__config__macros_8h.html#aa41dd1b1ebfa8e62b2587b39926aa8d0',1,'pdfsolid_config_macros.h']]],
-  ['cocrlanguage_12',['COCRLanguage',['../pdfsolid__basictypes__c_8h.html#aad628494bf04b6f47d977cabc3cd8b1c',1,'pdfsolid_basictypes_c.h']]],
-  ['cocroption_13',['COCROption',['../pdfsolid__basictypes__c_8h.html#a31192c30c72d860933b44c01fe0e5fa3',1,'pdfsolid_basictypes_c.h']]],
-  ['comhandle_14',['COMHANDLE',['../pdfsolid__config__macros_8h.html#ad35cee2a61326b0c2fedf9aa636b3d38',1,'pdfsolid_config_macros.h']]],
-  ['cpagelayoutmode_15',['CPageLayoutMode',['../pdfsolid__basictypes__c_8h.html#a65dadcfcbb09c46bb185bc18b4007f13',1,'pdfsolid_basictypes_c.h']]],
-  ['cprogress_16',['CProgress',['../pdfsolid__config__macros_8h.html#a2d56dc84f2bb501afbc6a9e47701d2eb',1,'pdfsolid_config_macros.h']]],
-  ['csdkerrorcode_17',['CSDKErrorCode',['../pdfsolid__basictypes__c_8h.html#ab08568672ac56ca510044e7bb2e42be6',1,'pdfsolid_basictypes_c.h']]],
-  ['ctablecallback_18',['CTableCallback',['../pdfsolid__config__macros_8h.html#afc08f8e24b34cbeedbe9a22835b21118',1,'pdfsolid_config_macros.h']]]
+  ['clicensetype_11',['CLicenseType',['../pdfsolid__basictypes__c_8h.html#a541dc8bd4d2af876acb372c94a771ff4',1,'pdfsolid_basictypes_c.h']]],
+  ['cocrcallback_12',['COCRCallback',['../pdfsolid__config__macros_8h.html#aa41dd1b1ebfa8e62b2587b39926aa8d0',1,'pdfsolid_config_macros.h']]],
+  ['cocrlanguage_13',['COCRLanguage',['../pdfsolid__basictypes__c_8h.html#aad628494bf04b6f47d977cabc3cd8b1c',1,'pdfsolid_basictypes_c.h']]],
+  ['cocroption_14',['COCROption',['../pdfsolid__basictypes__c_8h.html#a31192c30c72d860933b44c01fe0e5fa3',1,'pdfsolid_basictypes_c.h']]],
+  ['comhandle_15',['COMHANDLE',['../pdfsolid__config__macros_8h.html#ad35cee2a61326b0c2fedf9aa636b3d38',1,'pdfsolid_config_macros.h']]],
+  ['cpagelayoutmode_16',['CPageLayoutMode',['../pdfsolid__basictypes__c_8h.html#a65dadcfcbb09c46bb185bc18b4007f13',1,'pdfsolid_basictypes_c.h']]],
+  ['cprogress_17',['CProgress',['../pdfsolid__config__macros_8h.html#a2d56dc84f2bb501afbc6a9e47701d2eb',1,'pdfsolid_config_macros.h']]],
+  ['csdkerrorcode_18',['CSDKErrorCode',['../pdfsolid__basictypes__c_8h.html#ab08568672ac56ca510044e7bb2e42be6',1,'pdfsolid_basictypes_c.h']]],
+  ['ctablecallback_19',['CTableCallback',['../pdfsolid__config__macros_8h.html#afc08f8e24b34cbeedbe9a22835b21118',1,'pdfsolid_config_macros.h']]],
+  ['ctablerecognitionaccuracy_20',['CTableRecognitionAccuracy',['../pdfsolid__basictypes__c_8h.html#a9f2ca74b86835fb51122df1352a78296',1,'pdfsolid_basictypes_c.h']]],
+  ['cwordpdfbookmarkmode_21',['CWordPdfBookmarkMode',['../pdfsolid__basictypes__c_8h.html#aeafccebe1098f67a2dc6a1ddafd20b27',1,'pdfsolid_basictypes_c.h']]]
 ];

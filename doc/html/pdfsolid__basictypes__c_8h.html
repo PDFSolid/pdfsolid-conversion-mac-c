@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PDFSolid C API<span id="projectnumber">&#160;1.2.0</span>
+   <div id="projectname">PDFSolid C API<span id="projectnumber">&#160;1.3.0</span>
    </div>
    <div id="projectbrief">API Documentation</div>
   </td>
@@ -120,6 +120,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a541dc8bd4d2af876acb372c94a771ff4"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="pdfsolid__basictypes__c_8h.html#ac9b8310059d1cf1d89cc675fccb6eae2">_CLicenseType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pdfsolid__basictypes__c_8h.html#a541dc8bd4d2af876acb372c94a771ff4">CLicenseType</a></td></tr>
+<tr class="memdesc:a541dc8bd4d2af876acb372c94a771ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the currently verified license.  <br /></td></tr>
+<tr class="separator:a541dc8bd4d2af876acb372c94a771ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab08568672ac56ca510044e7bb2e42be6"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="pdfsolid__basictypes__c_8h.html#a3593ebddb4f90b645595c4defad4e8e6">_CSDKErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pdfsolid__basictypes__c_8h.html#ab08568672ac56ca510044e7bb2e42be6">CSDKErrorCode</a></td></tr>
 <tr class="memdesc:ab08568672ac56ca510044e7bb2e42be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error code.  <br /></td></tr>
 <tr class="separator:ab08568672ac56ca510044e7bb2e42be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,6 +135,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a31192c30c72d860933b44c01fe0e5fa3"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="pdfsolid__basictypes__c_8h.html#a3006a72534653cab442741cbbd10b3b8">_COCROption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pdfsolid__basictypes__c_8h.html#a31192c30c72d860933b44c01fe0e5fa3">COCROption</a></td></tr>
 <tr class="memdesc:a31192c30c72d860933b44c01fe0e5fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">OCR option.  <br /></td></tr>
 <tr class="separator:a31192c30c72d860933b44c01fe0e5fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f2ca74b86835fb51122df1352a78296"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="pdfsolid__basictypes__c_8h.html#ae08e3719352d0d202d757212291d6333">_CTableRecognitionAccuracy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pdfsolid__basictypes__c_8h.html#a9f2ca74b86835fb51122df1352a78296">CTableRecognitionAccuracy</a></td></tr>
+<tr class="memdesc:a9f2ca74b86835fb51122df1352a78296"><td class="mdescLeft">&#160;</td><td class="mdescRight">DocumentAI table recognition model profile.  <br /></td></tr>
+<tr class="separator:a9f2ca74b86835fb51122df1352a78296"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dcbf26547b2bcbd4f8e77b836de1e54"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="pdfsolid__basictypes__c_8h.html#a6fcd7c410e7f826471bde6e0c14a1933">_CImageColorMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pdfsolid__basictypes__c_8h.html#a4dcbf26547b2bcbd4f8e77b836de1e54">CImageColorMode</a></td></tr>
 <tr class="memdesc:a4dcbf26547b2bcbd4f8e77b836de1e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Image color mode.  <br /></td></tr>
 <tr class="separator:a4dcbf26547b2bcbd4f8e77b836de1e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,12 +150,21 @@ Typedefs</h2></td></tr>
 <tr class="memitem:abfd0b67343db05f725bf2637c7be8f08"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="pdfsolid__basictypes__c_8h.html#ad21f43f3d0a75a87d8d1880d4ccb4482">_CHtmlOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pdfsolid__basictypes__c_8h.html#abfd0b67343db05f725bf2637c7be8f08">CHtmlOption</a></td></tr>
 <tr class="memdesc:abfd0b67343db05f725bf2637c7be8f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Html option.  <br /></td></tr>
 <tr class="separator:abfd0b67343db05f725bf2637c7be8f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeafccebe1098f67a2dc6a1ddafd20b27"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="pdfsolid__basictypes__c_8h.html#a1f54de5c9547bea34be87ec73528cfc9">_CWordPdfBookmarkMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pdfsolid__basictypes__c_8h.html#aeafccebe1098f67a2dc6a1ddafd20b27">CWordPdfBookmarkMode</a></td></tr>
+<tr class="memdesc:aeafccebe1098f67a2dc6a1ddafd20b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">How the PDF bookmarks (the outline shown in a reader's navigation panel) are generated when converting a Word document to PDF.  <br /></td></tr>
+<tr class="separator:aeafccebe1098f67a2dc6a1ddafd20b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca457290a7da0f1b39ffdff7ddc75df4"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct___c_convert_option.html">_CConvertOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pdfsolid__basictypes__c_8h.html#aca457290a7da0f1b39ffdff7ddc75df4">CConvertOption</a></td></tr>
 <tr class="memdesc:aca457290a7da0f1b39ffdff7ddc75df4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert options.  <br /></td></tr>
 <tr class="separator:aca457290a7da0f1b39ffdff7ddc75df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ac9b8310059d1cf1d89cc675fccb6eae2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pdfsolid__basictypes__c_8h.html#ac9b8310059d1cf1d89cc675fccb6eae2">_CLicenseType</a> { <a class="el" href="pdfsolid__basictypes__c_8h.html#ac9b8310059d1cf1d89cc675fccb6eae2a9f448fe1ecafec3e63aa0ba5f72faf50">e_CLicenseUnknown</a> = 0
+, <a class="el" href="pdfsolid__basictypes__c_8h.html#ac9b8310059d1cf1d89cc675fccb6eae2a3455c1ad7673a11db497fee21f128a4a">e_CLicenseTrial</a> = 1
+, <a class="el" href="pdfsolid__basictypes__c_8h.html#ac9b8310059d1cf1d89cc675fccb6eae2a0b7ba20790e5920282679a27d9cbfea0">e_CLicenseFormal</a> = 2
+ }</td></tr>
+<tr class="memdesc:ac9b8310059d1cf1d89cc675fccb6eae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the currently verified license.  <a href="pdfsolid__basictypes__c_8h.html#ac9b8310059d1cf1d89cc675fccb6eae2">More...</a><br /></td></tr>
+<tr class="separator:ac9b8310059d1cf1d89cc675fccb6eae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3593ebddb4f90b645595c4defad4e8e6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pdfsolid__basictypes__c_8h.html#a3593ebddb4f90b645595c4defad4e8e6">_CSDKErrorCode</a> { <br />
 &#160;&#160;<a class="el" href="pdfsolid__basictypes__c_8h.html#a3593ebddb4f90b645595c4defad4e8e6a0dc07a3b96c917073a44e7917492ab3b">e_CErrSuccess</a> = 0
 , <a class="el" href="pdfsolid__basictypes__c_8h.html#a3593ebddb4f90b645595c4defad4e8e6a424d7a0c5c08301c579faed188d22d48">e_CErrCancel</a> = 1
@@ -246,6 +261,11 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a3006a72534653cab442741cbbd10b3b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">OCR option.  <a href="pdfsolid__basictypes__c_8h.html#a3006a72534653cab442741cbbd10b3b8">More...</a><br /></td></tr>
 <tr class="separator:a3006a72534653cab442741cbbd10b3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08e3719352d0d202d757212291d6333"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pdfsolid__basictypes__c_8h.html#ae08e3719352d0d202d757212291d6333">_CTableRecognitionAccuracy</a> { <a class="el" href="pdfsolid__basictypes__c_8h.html#ae08e3719352d0d202d757212291d6333aaf69cfd29cf44e64af9621ad7aa1d7b5">e_CHighAccuracy</a> = 0
+, <a class="el" href="pdfsolid__basictypes__c_8h.html#ae08e3719352d0d202d757212291d6333ad6e91059bfadf6772294647ecfede938">e_CBalanced</a> = 1
+ }</td></tr>
+<tr class="memdesc:ae08e3719352d0d202d757212291d6333"><td class="mdescLeft">&#160;</td><td class="mdescRight">DocumentAI table recognition model profile.  <a href="pdfsolid__basictypes__c_8h.html#ae08e3719352d0d202d757212291d6333">More...</a><br /></td></tr>
+<tr class="separator:ae08e3719352d0d202d757212291d6333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fcd7c410e7f826471bde6e0c14a1933"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pdfsolid__basictypes__c_8h.html#a6fcd7c410e7f826471bde6e0c14a1933">_CImageColorMode</a> { <a class="el" href="pdfsolid__basictypes__c_8h.html#a6fcd7c410e7f826471bde6e0c14a1933a6e182b546bf2637ca9cd74077f9feb92">e_CColor</a>
 , <a class="el" href="pdfsolid__basictypes__c_8h.html#a6fcd7c410e7f826471bde6e0c14a1933a649058c1a65461792fc065778882cfd3">e_CGray</a>
 , <a class="el" href="pdfsolid__basictypes__c_8h.html#a6fcd7c410e7f826471bde6e0c14a1933ac06ca43aacdd9e9a36f063d0ed1fbaed">e_CBinary</a>
@@ -281,6 +301,12 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ad21f43f3d0a75a87d8d1880d4ccb4482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Html option.  <a href="pdfsolid__basictypes__c_8h.html#ad21f43f3d0a75a87d8d1880d4ccb4482">More...</a><br /></td></tr>
 <tr class="separator:ad21f43f3d0a75a87d8d1880d4ccb4482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f54de5c9547bea34be87ec73528cfc9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pdfsolid__basictypes__c_8h.html#a1f54de5c9547bea34be87ec73528cfc9">_CWordPdfBookmarkMode</a> { <a class="el" href="pdfsolid__basictypes__c_8h.html#a1f54de5c9547bea34be87ec73528cfc9ab22d803c50a5ccd52112758f7aeca336">e_CWordPdfBookmarkNone</a> = 0
+, <a class="el" href="pdfsolid__basictypes__c_8h.html#a1f54de5c9547bea34be87ec73528cfc9a2e5abea46a239920185957a706d98aee">e_CWordPdfBookmarkHeadings</a>
+, <a class="el" href="pdfsolid__basictypes__c_8h.html#a1f54de5c9547bea34be87ec73528cfc9a2ff9223a9028ba91111cfba6c9e3ed11">e_CWordPdfBookmarkWordBookmarks</a>
+ }</td></tr>
+<tr class="memdesc:a1f54de5c9547bea34be87ec73528cfc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">How the PDF bookmarks (the outline shown in a reader's navigation panel) are generated when converting a Word document to PDF.  <a href="pdfsolid__basictypes__c_8h.html#a1f54de5c9547bea34be87ec73528cfc9">More...</a><br /></td></tr>
+<tr class="separator:a1f54de5c9547bea34be87ec73528cfc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a585898210f32b77be1eb645909b31308" name="a585898210f32b77be1eb645909b31308"></a>
@@ -297,14 +323,16 @@ Enumerations</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    { \</div>
 <div class="line">    <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">false</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">false</span>, \</div>
 <div class="line">    0, 4.0f, <a class="code hl_enumvalue" href="pdfsolid__basictypes__c_8h.html#a6b0e950c369062b00d32ed0af731b8c7a89ef3ca5240c8ea5a1378ff7e4725187">e_PageLayoutModeFlow</a>, <a class="code hl_enumvalue" href="pdfsolid__basictypes__c_8h.html#a4affe3de0656cf3e112cb1743eb4d248a4448028b73d99beb64c232e056433306">e_CForTable</a>, <a class="code hl_enumvalue" href="pdfsolid__basictypes__c_8h.html#ad21f43f3d0a75a87d8d1880d4ccb4482a4518c7609b1933ad1dc975077ef047c2">e_CSinglePage</a>, <a class="code hl_enumvalue" href="pdfsolid__basictypes__c_8h.html#a3006a72534653cab442741cbbd10b3b8ad1138241679daed71255ff2f4724c7ff">e_CAll</a>, <a class="code hl_enumvalue" href="pdfsolid__basictypes__c_8h.html#a6fcd7c410e7f826471bde6e0c14a1933a6e182b546bf2637ca9cd74077f9feb92">e_CColor</a>, <a class="code hl_enumvalue" href="pdfsolid__basictypes__c_8h.html#a49d6260035d0639cc2acffa7eb735a60a6cf63829419924b017e2279a349c3891">e_CJPG</a>, \</div>
-<div class="line">    {0}, {0}, 0, <span class="keyword">false</span>, <span class="keyword">false</span> \</div>
+<div class="line">    {0}, {0}, 0, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, 0.0f, 0.0f, <a class="code hl_enumvalue" href="pdfsolid__basictypes__c_8h.html#ae08e3719352d0d202d757212291d6333ad6e91059bfadf6772294647ecfede938">e_CBalanced</a>, <a class="code hl_enumvalue" href="pdfsolid__basictypes__c_8h.html#a1f54de5c9547bea34be87ec73528cfc9ab22d803c50a5ccd52112758f7aeca336">e_CWordPdfBookmarkNone</a> \</div>
 <div class="line">}</div>
-<div class="ttc" id="apdfsolid__basictypes__c_8h_html_a3006a72534653cab442741cbbd10b3b8ad1138241679daed71255ff2f4724c7ff"><div class="ttname"><a href="pdfsolid__basictypes__c_8h.html#a3006a72534653cab442741cbbd10b3b8ad1138241679daed71255ff2f4724c7ff">e_CAll</a></div><div class="ttdeci">@ e_CAll</div><div class="ttdoc">Recognize all characters on all pages.</div><div class="ttdef"><b>Definition:</b> pdfsolid_basictypes_c.h:160</div></div>
-<div class="ttc" id="apdfsolid__basictypes__c_8h_html_a49d6260035d0639cc2acffa7eb735a60a6cf63829419924b017e2279a349c3891"><div class="ttname"><a href="pdfsolid__basictypes__c_8h.html#a49d6260035d0639cc2acffa7eb735a60a6cf63829419924b017e2279a349c3891">e_CJPG</a></div><div class="ttdeci">@ e_CJPG</div><div class="ttdoc">.jpg.</div><div class="ttdef"><b>Definition:</b> pdfsolid_basictypes_c.h:178</div></div>
-<div class="ttc" id="apdfsolid__basictypes__c_8h_html_a4affe3de0656cf3e112cb1743eb4d248a4448028b73d99beb64c232e056433306"><div class="ttname"><a href="pdfsolid__basictypes__c_8h.html#a4affe3de0656cf3e112cb1743eb4d248a4448028b73d99beb64c232e056433306">e_CForTable</a></div><div class="ttdeci">@ e_CForTable</div><div class="ttdoc">A worksheet to contain only one table.</div><div class="ttdef"><b>Definition:</b> pdfsolid_basictypes_c.h:201</div></div>
-<div class="ttc" id="apdfsolid__basictypes__c_8h_html_a6b0e950c369062b00d32ed0af731b8c7a89ef3ca5240c8ea5a1378ff7e4725187"><div class="ttname"><a href="pdfsolid__basictypes__c_8h.html#a6b0e950c369062b00d32ed0af731b8c7a89ef3ca5240c8ea5a1378ff7e4725187">e_PageLayoutModeFlow</a></div><div class="ttdeci">@ e_PageLayoutModeFlow</div><div class="ttdoc">Flowing mode.</div><div class="ttdef"><b>Definition:</b> pdfsolid_basictypes_c.h:147</div></div>
-<div class="ttc" id="apdfsolid__basictypes__c_8h_html_a6fcd7c410e7f826471bde6e0c14a1933a6e182b546bf2637ca9cd74077f9feb92"><div class="ttname"><a href="pdfsolid__basictypes__c_8h.html#a6fcd7c410e7f826471bde6e0c14a1933a6e182b546bf2637ca9cd74077f9feb92">e_CColor</a></div><div class="ttdeci">@ e_CColor</div><div class="ttdoc">Color mode.</div><div class="ttdef"><b>Definition:</b> pdfsolid_basictypes_c.h:167</div></div>
-<div class="ttc" id="apdfsolid__basictypes__c_8h_html_ad21f43f3d0a75a87d8d1880d4ccb4482a4518c7609b1933ad1dc975077ef047c2"><div class="ttname"><a href="pdfsolid__basictypes__c_8h.html#ad21f43f3d0a75a87d8d1880d4ccb4482a4518c7609b1933ad1dc975077ef047c2">e_CSinglePage</a></div><div class="ttdeci">@ e_CSinglePage</div><div class="ttdoc">Convert the entire PDF file into a single HTML file.</div><div class="ttdef"><b>Definition:</b> pdfsolid_basictypes_c.h:212</div></div>
+<div class="ttc" id="apdfsolid__basictypes__c_8h_html_a1f54de5c9547bea34be87ec73528cfc9ab22d803c50a5ccd52112758f7aeca336"><div class="ttname"><a href="pdfsolid__basictypes__c_8h.html#a1f54de5c9547bea34be87ec73528cfc9ab22d803c50a5ccd52112758f7aeca336">e_CWordPdfBookmarkNone</a></div><div class="ttdeci">@ e_CWordPdfBookmarkNone</div><div class="ttdoc">Do not generate bookmarks.</div><div class="ttdef"><b>Definition:</b> pdfsolid_basictypes_c.h:257</div></div>
+<div class="ttc" id="apdfsolid__basictypes__c_8h_html_a3006a72534653cab442741cbbd10b3b8ad1138241679daed71255ff2f4724c7ff"><div class="ttname"><a href="pdfsolid__basictypes__c_8h.html#a3006a72534653cab442741cbbd10b3b8ad1138241679daed71255ff2f4724c7ff">e_CAll</a></div><div class="ttdeci">@ e_CAll</div><div class="ttdoc">Recognize all characters on all pages.</div><div class="ttdef"><b>Definition:</b> pdfsolid_basictypes_c.h:183</div></div>
+<div class="ttc" id="apdfsolid__basictypes__c_8h_html_a49d6260035d0639cc2acffa7eb735a60a6cf63829419924b017e2279a349c3891"><div class="ttname"><a href="pdfsolid__basictypes__c_8h.html#a49d6260035d0639cc2acffa7eb735a60a6cf63829419924b017e2279a349c3891">e_CJPG</a></div><div class="ttdeci">@ e_CJPG</div><div class="ttdoc">.jpg.</div><div class="ttdef"><b>Definition:</b> pdfsolid_basictypes_c.h:210</div></div>
+<div class="ttc" id="apdfsolid__basictypes__c_8h_html_a4affe3de0656cf3e112cb1743eb4d248a4448028b73d99beb64c232e056433306"><div class="ttname"><a href="pdfsolid__basictypes__c_8h.html#a4affe3de0656cf3e112cb1743eb4d248a4448028b73d99beb64c232e056433306">e_CForTable</a></div><div class="ttdeci">@ e_CForTable</div><div class="ttdoc">A worksheet to contain only one table.</div><div class="ttdef"><b>Definition:</b> pdfsolid_basictypes_c.h:233</div></div>
+<div class="ttc" id="apdfsolid__basictypes__c_8h_html_a6b0e950c369062b00d32ed0af731b8c7a89ef3ca5240c8ea5a1378ff7e4725187"><div class="ttname"><a href="pdfsolid__basictypes__c_8h.html#a6b0e950c369062b00d32ed0af731b8c7a89ef3ca5240c8ea5a1378ff7e4725187">e_PageLayoutModeFlow</a></div><div class="ttdeci">@ e_PageLayoutModeFlow</div><div class="ttdoc">Flowing mode.</div><div class="ttdef"><b>Definition:</b> pdfsolid_basictypes_c.h:170</div></div>
+<div class="ttc" id="apdfsolid__basictypes__c_8h_html_a6fcd7c410e7f826471bde6e0c14a1933a6e182b546bf2637ca9cd74077f9feb92"><div class="ttname"><a href="pdfsolid__basictypes__c_8h.html#a6fcd7c410e7f826471bde6e0c14a1933a6e182b546bf2637ca9cd74077f9feb92">e_CColor</a></div><div class="ttdeci">@ e_CColor</div><div class="ttdoc">Color mode.</div><div class="ttdef"><b>Definition:</b> pdfsolid_basictypes_c.h:199</div></div>
+<div class="ttc" id="apdfsolid__basictypes__c_8h_html_ad21f43f3d0a75a87d8d1880d4ccb4482a4518c7609b1933ad1dc975077ef047c2"><div class="ttname"><a href="pdfsolid__basictypes__c_8h.html#ad21f43f3d0a75a87d8d1880d4ccb4482a4518c7609b1933ad1dc975077ef047c2">e_CSinglePage</a></div><div class="ttdeci">@ e_CSinglePage</div><div class="ttdoc">Convert the entire PDF file into a single HTML file.</div><div class="ttdef"><b>Definition:</b> pdfsolid_basictypes_c.h:244</div></div>
+<div class="ttc" id="apdfsolid__basictypes__c_8h_html_ae08e3719352d0d202d757212291d6333ad6e91059bfadf6772294647ecfede938"><div class="ttname"><a href="pdfsolid__basictypes__c_8h.html#ae08e3719352d0d202d757212291d6333ad6e91059bfadf6772294647ecfede938">e_CBalanced</a></div><div class="ttdeci">@ e_CBalanced</div><div class="ttdoc">Balanced recognition accuracy, resource usage, and throughput.</div><div class="ttdef"><b>Definition:</b> pdfsolid_basictypes_c.h:192</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -417,6 +445,22 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a id="a541dc8bd4d2af876acb372c94a771ff4" name="a541dc8bd4d2af876acb372c94a771ff4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a541dc8bd4d2af876acb372c94a771ff4">&#9670;&#160;</a></span>CLicenseType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="pdfsolid__basictypes__c_8h.html#ac9b8310059d1cf1d89cc675fccb6eae2">_CLicenseType</a> <a class="el" href="pdfsolid__basictypes__c_8h.html#a541dc8bd4d2af876acb372c94a771ff4">CLicenseType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type of the currently verified license. </p>
+
+</div>
+</div>
 <a id="aad628494bf04b6f47d977cabc3cd8b1c" name="aad628494bf04b6f47d977cabc3cd8b1c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad628494bf04b6f47d977cabc3cd8b1c">&#9670;&#160;</a></span>COCRLanguage</h2>
 
@@ -478,6 +522,38 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Error code. </p>
+
+</div>
+</div>
+<a id="a9f2ca74b86835fb51122df1352a78296" name="a9f2ca74b86835fb51122df1352a78296"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f2ca74b86835fb51122df1352a78296">&#9670;&#160;</a></span>CTableRecognitionAccuracy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="pdfsolid__basictypes__c_8h.html#ae08e3719352d0d202d757212291d6333">_CTableRecognitionAccuracy</a> <a class="el" href="pdfsolid__basictypes__c_8h.html#a9f2ca74b86835fb51122df1352a78296">CTableRecognitionAccuracy</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DocumentAI table recognition model profile. </p>
+
+</div>
+</div>
+<a id="aeafccebe1098f67a2dc6a1ddafd20b27" name="aeafccebe1098f67a2dc6a1ddafd20b27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeafccebe1098f67a2dc6a1ddafd20b27">&#9670;&#160;</a></span>CWordPdfBookmarkMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="pdfsolid__basictypes__c_8h.html#a1f54de5c9547bea34be87ec73528cfc9">_CWordPdfBookmarkMode</a> <a class="el" href="pdfsolid__basictypes__c_8h.html#aeafccebe1098f67a2dc6a1ddafd20b27">CWordPdfBookmarkMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>How the PDF bookmarks (the outline shown in a reader's navigation panel) are generated when converting a Word document to PDF. </p>
 
 </div>
 </div>
@@ -588,6 +664,27 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a49d6260035d0639cc2acffa7eb735a60a29ed13042d35abff98ea078c533b392b" name="a49d6260035d0639cc2acffa7eb735a60a29ed13042d35abff98ea078c533b392b"></a>e_CWEBP&#160;</td><td class="fielddoc"><p>.webp </p>
 </td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac9b8310059d1cf1d89cc675fccb6eae2" name="ac9b8310059d1cf1d89cc675fccb6eae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9b8310059d1cf1d89cc675fccb6eae2">&#9670;&#160;</a></span>_CLicenseType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="pdfsolid__basictypes__c_8h.html#ac9b8310059d1cf1d89cc675fccb6eae2">_CLicenseType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type of the currently verified license. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac9b8310059d1cf1d89cc675fccb6eae2a9f448fe1ecafec3e63aa0ba5f72faf50" name="ac9b8310059d1cf1d89cc675fccb6eae2a9f448fe1ecafec3e63aa0ba5f72faf50"></a>e_CLicenseUnknown&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac9b8310059d1cf1d89cc675fccb6eae2a3455c1ad7673a11db497fee21f128a4a" name="ac9b8310059d1cf1d89cc675fccb6eae2a3455c1ad7673a11db497fee21f128a4a"></a>e_CLicenseTrial&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac9b8310059d1cf1d89cc675fccb6eae2a0b7ba20790e5920282679a27d9cbfea0" name="ac9b8310059d1cf1d89cc675fccb6eae2a0b7ba20790e5920282679a27d9cbfea0"></a>e_CLicenseFormal&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -758,25 +855,85 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a537cc501f21558bd9b8248cb798d00d3" name="a3593ebddb4f90b645595c4defad4e8e6a537cc501f21558bd9b8248cb798d00d3"></a>e_CErrConverting&#160;</td><td class="fielddoc"><p>Currently executing conversion task. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a72bf3d2f2eef31c143821b0df6df1354" name="a3593ebddb4f90b645595c4defad4e8e6a72bf3d2f2eef31c143821b0df6df1354"></a>e_CErrInvalidArg&#160;</td><td class="fielddoc"><p>Document AI error code. </p>
+<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a72bf3d2f2eef31c143821b0df6df1354" name="a3593ebddb4f90b645595c4defad4e8e6a72bf3d2f2eef31c143821b0df6df1354"></a>e_CErrInvalidArg&#160;</td><td class="fielddoc"><p>Invalid argument provided. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6acf8e3fe44c818f241e641e3d8b1824e3" name="a3593ebddb4f90b645595c4defad4e8e6acf8e3fe44c818f241e641e3d8b1824e3"></a>e_CErrInvalidHandle&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6abedc9a7e87a240fcffba12ec51fae96a" name="a3593ebddb4f90b645595c4defad4e8e6abedc9a7e87a240fcffba12ec51fae96a"></a>e_CErrModelInvalidFormat&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a5e8b136e58353a1860ceffa315a1935f" name="a3593ebddb4f90b645595c4defad4e8e6a5e8b136e58353a1860ceffa315a1935f"></a>e_CErrModelFunctionUnsupported&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a643f067b9aca233a7e991a5345ad6d60" name="a3593ebddb4f90b645595c4defad4e8e6a643f067b9aca233a7e991a5345ad6d60"></a>e_CErrModelFormatUnsupported&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6acf51a3d2801f23aa1a9f52b667aeb6e7" name="a3593ebddb4f90b645595c4defad4e8e6acf51a3d2801f23aa1a9f52b667aeb6e7"></a>e_CErrModelSDKMismatch&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a8cf49bc7fb3084e756f943a960f7a9bb" name="a3593ebddb4f90b645595c4defad4e8e6a8cf49bc7fb3084e756f943a960f7a9bb"></a>e_CErrImageDataEmpty&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6ac8b65c85deba1541cb6886c11bbf6550" name="a3593ebddb4f90b645595c4defad4e8e6ac8b65c85deba1541cb6886c11bbf6550"></a>e_CErrImageWHError&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a274742a79dd93481b28d3905707e1b78" name="a3593ebddb4f90b645595c4defad4e8e6a274742a79dd93481b28d3905707e1b78"></a>e_CErrImageUnsupportedFormat&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6ad10e4588a4af32406252260f320a2f4b" name="a3593ebddb4f90b645595c4defad4e8e6ad10e4588a4af32406252260f320a2f4b"></a>e_CErrImageInvalid&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a628031a0e738587ffe5450a8be1f9e6b" name="a3593ebddb4f90b645595c4defad4e8e6a628031a0e738587ffe5450a8be1f9e6b"></a>e_CErrExpire&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a810bf5cae13e9d67947fa86986cfb1d4" name="a3593ebddb4f90b645595c4defad4e8e6a810bf5cae13e9d67947fa86986cfb1d4"></a>e_CErrMissingArg&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a0f7ff83cc0dadf16d100608d60c3dd58" name="a3593ebddb4f90b645595c4defad4e8e6a0f7ff83cc0dadf16d100608d60c3dd58"></a>e_CErrLicenseUnsupportedAPI&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a99a013a7cce12619e6a8e14968987f0d" name="a3593ebddb4f90b645595c4defad4e8e6a99a013a7cce12619e6a8e14968987f0d"></a>e_CErrLicenseMismatch&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6aeb2ad07c1331b3a9ff775ca39f5a8a7a" name="a3593ebddb4f90b645595c4defad4e8e6aeb2ad07c1331b3a9ff775ca39f5a8a7a"></a>e_CErrInvalidTable&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a60f6288d4b3dc32674cfa3e0aaf9d8c7" name="a3593ebddb4f90b645595c4defad4e8e6a60f6288d4b3dc32674cfa3e0aaf9d8c7"></a>e_CErrUnsupportedFeature&#160;</td><td class="fielddoc"><p>The source document uses a feature this SDK cannot lay out yet, so no output was produced. Distinct from e_CErrIO: nothing failed on the disk or in the writer, the document itself is out of scope. </p>
+<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6acf8e3fe44c818f241e641e3d8b1824e3" name="a3593ebddb4f90b645595c4defad4e8e6acf8e3fe44c818f241e641e3d8b1824e3"></a>e_CErrInvalidHandle&#160;</td><td class="fielddoc"><p>The handle is invalid, possibly uninitialized or already released. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6abedc9a7e87a240fcffba12ec51fae96a" name="a3593ebddb4f90b645595c4defad4e8e6abedc9a7e87a240fcffba12ec51fae96a"></a>e_CErrModelInvalidFormat&#160;</td><td class="fielddoc"><p>The model file format is invalid or corrupted. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a5e8b136e58353a1860ceffa315a1935f" name="a3593ebddb4f90b645595c4defad4e8e6a5e8b136e58353a1860ceffa315a1935f"></a>e_CErrModelFunctionUnsupported&#160;</td><td class="fielddoc"><p>The model does not support the requested function or operation. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a643f067b9aca233a7e991a5345ad6d60" name="a3593ebddb4f90b645595c4defad4e8e6a643f067b9aca233a7e991a5345ad6d60"></a>e_CErrModelFormatUnsupported&#160;</td><td class="fielddoc"><p>The model format is not supported by this system or SDK. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6acf51a3d2801f23aa1a9f52b667aeb6e7" name="a3593ebddb4f90b645595c4defad4e8e6acf51a3d2801f23aa1a9f52b667aeb6e7"></a>e_CErrModelSDKMismatch&#160;</td><td class="fielddoc"><p>The model is incompatible with the current SDK version. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a8cf49bc7fb3084e756f943a960f7a9bb" name="a3593ebddb4f90b645595c4defad4e8e6a8cf49bc7fb3084e756f943a960f7a9bb"></a>e_CErrImageDataEmpty&#160;</td><td class="fielddoc"><p>The image data is empty or not provided. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6ac8b65c85deba1541cb6886c11bbf6550" name="a3593ebddb4f90b645595c4defad4e8e6ac8b65c85deba1541cb6886c11bbf6550"></a>e_CErrImageWHError&#160;</td><td class="fielddoc"><p>The image width or height is invalid (e.g., less than or equal to zero). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a274742a79dd93481b28d3905707e1b78" name="a3593ebddb4f90b645595c4defad4e8e6a274742a79dd93481b28d3905707e1b78"></a>e_CErrImageUnsupportedFormat&#160;</td><td class="fielddoc"><p>The image format is not supported. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6ad10e4588a4af32406252260f320a2f4b" name="a3593ebddb4f90b645595c4defad4e8e6ad10e4588a4af32406252260f320a2f4b"></a>e_CErrImageInvalid&#160;</td><td class="fielddoc"><p>The image is invalid or corrupted. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a628031a0e738587ffe5450a8be1f9e6b" name="a3593ebddb4f90b645595c4defad4e8e6a628031a0e738587ffe5450a8be1f9e6b"></a>e_CErrExpire&#160;</td><td class="fielddoc"><p>The resource (e.g., license, token) has expired. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a810bf5cae13e9d67947fa86986cfb1d4" name="a3593ebddb4f90b645595c4defad4e8e6a810bf5cae13e9d67947fa86986cfb1d4"></a>e_CErrMissingArg&#160;</td><td class="fielddoc"><p>A required argument is missing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a0f7ff83cc0dadf16d100608d60c3dd58" name="a3593ebddb4f90b645595c4defad4e8e6a0f7ff83cc0dadf16d100608d60c3dd58"></a>e_CErrLicenseUnsupportedAPI&#160;</td><td class="fielddoc"><p>The current license does not support calling this API. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a99a013a7cce12619e6a8e14968987f0d" name="a3593ebddb4f90b645595c4defad4e8e6a99a013a7cce12619e6a8e14968987f0d"></a>e_CErrLicenseMismatch&#160;</td><td class="fielddoc"><p>The license does not match the device, module, or version. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6aeb2ad07c1331b3a9ff775ca39f5a8a7a" name="a3593ebddb4f90b645595c4defad4e8e6aeb2ad07c1331b3a9ff775ca39f5a8a7a"></a>e_CErrInvalidTable&#160;</td><td class="fielddoc"><p>The table data is invalid or null. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6a60f6288d4b3dc32674cfa3e0aaf9d8c7" name="a3593ebddb4f90b645595c4defad4e8e6a60f6288d4b3dc32674cfa3e0aaf9d8c7"></a>e_CErrUnsupportedFeature&#160;</td><td class="fielddoc"><p>The source document uses a feature this SDK cannot fully reproduce, or the requested output cannot carry the input's content. A usable output may still have been written: Word to PDF normally still produces the PDF and reports this in its optional diagnostics. Distinct from e_CErrIO: nothing failed on the disk or in the writer. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3593ebddb4f90b645595c4defad4e8e6aac9a7800bb63a7249e4dade05620fd82" name="a3593ebddb4f90b645595c4defad4e8e6aac9a7800bb63a7249e4dade05620fd82"></a>e_CErrUnknown&#160;</td><td class="fielddoc"><p>Unknown error. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ae08e3719352d0d202d757212291d6333" name="ae08e3719352d0d202d757212291d6333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae08e3719352d0d202d757212291d6333">&#9670;&#160;</a></span>_CTableRecognitionAccuracy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="pdfsolid__basictypes__c_8h.html#ae08e3719352d0d202d757212291d6333">_CTableRecognitionAccuracy</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DocumentAI table recognition model profile. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae08e3719352d0d202d757212291d6333aaf69cfd29cf44e64af9621ad7aa1d7b5" name="ae08e3719352d0d202d757212291d6333aaf69cfd29cf44e64af9621ad7aa1d7b5"></a>e_CHighAccuracy&#160;</td><td class="fielddoc"><p>Prioritize recognition accuracy; may use more resources. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae08e3719352d0d202d757212291d6333ad6e91059bfadf6772294647ecfede938" name="ae08e3719352d0d202d757212291d6333ad6e91059bfadf6772294647ecfede938"></a>e_CBalanced&#160;</td><td class="fielddoc"><p>Balanced recognition accuracy, resource usage, and throughput. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a1f54de5c9547bea34be87ec73528cfc9" name="a1f54de5c9547bea34be87ec73528cfc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f54de5c9547bea34be87ec73528cfc9">&#9670;&#160;</a></span>_CWordPdfBookmarkMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="pdfsolid__basictypes__c_8h.html#a1f54de5c9547bea34be87ec73528cfc9">_CWordPdfBookmarkMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>How the PDF bookmarks (the outline shown in a reader's navigation panel) are generated when converting a Word document to PDF. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1f54de5c9547bea34be87ec73528cfc9ab22d803c50a5ccd52112758f7aeca336" name="a1f54de5c9547bea34be87ec73528cfc9ab22d803c50a5ccd52112758f7aeca336"></a>e_CWordPdfBookmarkNone&#160;</td><td class="fielddoc"><p>Do not generate bookmarks. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f54de5c9547bea34be87ec73528cfc9a2e5abea46a239920185957a706d98aee" name="a1f54de5c9547bea34be87ec73528cfc9a2e5abea46a239920185957a706d98aee"></a>e_CWordPdfBookmarkHeadings&#160;</td><td class="fielddoc"><p>One bookmark per heading, that is per paragraph with an outline level, nested by level. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1f54de5c9547bea34be87ec73528cfc9a2ff9223a9028ba91111cfba6c9e3ed11" name="a1f54de5c9547bea34be87ec73528cfc9a2ff9223a9028ba91111cfba6c9e3ed11"></a>e_CWordPdfBookmarkWordBookmarks&#160;</td><td class="fielddoc"><p>One bookmark per Word bookmark, named after it. </p>
 </td></tr>
 </table>
 

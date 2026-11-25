@@ -1,17 +1,15 @@
-cmake_minimum_required(VERSION 3.20)
-project(PDFSolidDemo VERSION 1.2.0 LANGUAGES C CXX)
-set(CMAKE_CXX_STANDARD 17)
+cmake_minimum_required(VERSION 3.12)
+project(demo VERSION 1.3.0 LANGUAGES C)
+
+set(CMAKE_OSX_DEPLOYMENT_TARGET "11.0" CACHE STRING "Minimum macOS version")
 set(CMAKE_C_STANDARD 11)
-get_filename_component(SDK_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/../.." ABSOLUTE)
-if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/demo.cpp")
-    set(DEMO_EXTENSION cpp)
-else()
-    set(DEMO_EXTENSION c)
-endif()
-add_executable(demo demo.${DEMO_EXTENSION})
-add_executable(conversion_formats conversion_formats.${DEMO_EXTENSION})
-foreach(target demo conversion_formats)
-    target_include_directories(${target} PRIVATE "${SDK_ROOT}/include")
-    target_link_libraries(${target} PRIVATE "${SDK_ROOT}/lib/libpdfsolidconversionsdk.dylib")
-    set_target_properties(${target} PROPERTIES BUILD_RPATH "${SDK_ROOT}/lib")
-endforeach()
+set(CMAKE_C_STANDARD_REQUIRED ON)
+
+add_executable(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/demo.c)
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../../include)
+target_link_libraries(${PROJECT_NAME} PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../lib/libpdfsolidconversionsdk.dylib
+)
+set_target_properties(${PROJECT_NAME} PROPERTIES
+    BUILD_RPATH "${CMAKE_CURRENT_SOURCE_DIR}/../../lib"
+)
